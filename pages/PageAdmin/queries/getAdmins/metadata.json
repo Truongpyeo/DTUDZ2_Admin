@@ -53,7 +53,7 @@
             "data": ""
           },
           "query": {
-            "data": " {\n    // Join 'chuc_vus' với 'admins' bằng 'id_quyen'\n    $lookup: {\n      from: \"chuc_vus\", // Bảng cần join\n      localField: \"id_quyen\", // Trường trong 'admins'\n      foreignField: \"id\", // Trường trong 'chuc_vus'\n      as: \"chuc_vu_details\" // Kết quả join lưu tại đây\n    }\n  }"
+            "data": ""
           },
           "skip": {
             "data": "{{(table.pageNo -1) * table.pageSize}}"

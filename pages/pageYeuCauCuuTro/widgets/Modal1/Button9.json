@@ -32,10 +32,10 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{themMoi.run().then(() => {\n  showAlert('Điều phối thành công', 'success');\n  showModal(modal_dieuphoi.name);\n  changeTrangThaiCuuNans.run();\n  getYeuCauCuuTro.run();\n  changeNhanLucs.run();\n  getNhanLucByNguonLuc.run();\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});}}",
+  "onClick": "{{themMoi.run().then(() => {\n  changeTrangThaiCuuNans.run();\n  changeNhanLucs.run();\n  changeTrangThaiCuuNans.run();\n  getYeuCauCuuTro.run();\n  getNhanLucByNguonLuc.run();\n  showModal(modal_dieuphoi.name);\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});\nchangeNhanLucs.run();}}",
   "originalBottomRow": 19,
   "originalTopRow": 15,
-  "parentId": "ii8l8l8vnq",
+  "parentId": "ab3ih3k09j",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -46,6 +46,6 @@
   "topRow": 15,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "aqsdsiyn8w",
+  "widgetId": "kou760gjqf",
   "widgetName": "Button9"
 }

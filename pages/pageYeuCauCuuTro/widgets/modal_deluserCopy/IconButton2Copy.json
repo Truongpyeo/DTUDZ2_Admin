@@ -32,13 +32,13 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(modal_deluserCopy.name);}}",
-  "parentId": "ohn09w3zrx",
+  "parentId": "yhadej4m6r",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "igp35dx6oq",
+  "widgetId": "tcjabwmmlv",
   "widgetName": "IconButton2Copy"
 }

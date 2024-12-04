@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "674833e82451335b46a6795b_45564978-a0b7-4eec-ae6b-c5129635f7e0",
+  "gitSyncId": "674ffbcd2618fa62f837f29d_fb5912f2-def2-4254-94a9-3316d7a98a50",
   "id": "pageYeuCauCuuTro_changeNhanLucs",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"update\": \"nhan_lucs\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{Table1.triggeredRow.id}}\n}\n,\n    \"u\": {\n    \"$set\": {\n        \"is_san_san\": {{Table1.triggeredRow.is_san_san === true ? true : false}}\n    }\n}\n,\n    \"multi\": false,\n  }]\n}\n",
+            "data": "{\n  \"update\": \"nhan_lucs\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{Table1.triggeredRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {\n\t\t\"is_san_san\": {{Table1.triggeredRow.is_san_san === true ? false : true}}\n\t}\n\t}\n,\n    \"multi\": false,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -81,7 +81,7 @@
             "data": "{\n  \"id\": {{Table1.triggeredRow.id}}\n}\n"
           },
           "update": {
-            "data": "{\n    \"$set\": {\n        \"is_san_san\": {{Table1.triggeredRow.is_san_san === true ? true : false}}\n    }\n}\n"
+            "data": "{\n\t\"$set\": {\n\t\t\"is_san_san\": {{Table1.triggeredRow.is_san_san === true ? false : true}}\n\t}\n\t}\n"
           }
         }
       },
@@ -104,6 +104,7 @@
       }
     ],
     "executeOnLoad": false,
+    "fullyQualifiedName": "changeNhanLucs",
     "name": "changeNhanLucs",
     "pageId": "pageYeuCauCuuTro",
     "userSetOnLoad": false

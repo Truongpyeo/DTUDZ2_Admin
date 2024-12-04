@@ -61,12 +61,12 @@
         },
         "insert": {
           "documents": {
-            "data": "[\n\t{\n\t\tid: {{this.params.id}},                         \n\t\tusername: {{inp_fullname.text}},                     \n\t\temail: {{input_email.text}},                          \n\t\tpassword: {{this.params.pass}},                 \n\t\tis_master: false,                                \n\t\tid_quyen: {{add_select.selectedOptionValue}},    \n\t\tis_open: true                                    \n\t}\n]\n"
+            "data": "{\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"username\": \"{{inp_fullname.text}}\",                     \n\t\"email\": \"{{input_email.text}}\",                          \n\tpassword: \"{{this.params.password}}\",                 \n\t\"is_master\": false,                                \n\t\"id_quyen\": \"{{add_select.selectedOptionValue}}\",    \n\t\"is_open\": true                                    \n}\n"
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"insert\": \"admins\",\n  \"documents\": [\n\t{\n\t\tid: {{this.params.id}},                         \n\t\tusername: {{inp_fullname.text}},                     \n\t\temail: {{input_email.text}},                          \n\t\tpassword: {{this.params.pass}},                 \n\t\tis_master: false,                                \n\t\tid_quyen: {{add_select.selectedOptionValue}},    \n\t\tis_open: true                                    \n\t}\n]\n\n}\n",
+            "data": "{\n  \"insert\": \"admins\",\n  \"documents\": {\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"username\": \"{{inp_fullname.text}}\",                     \n\t\"email\": \"{{input_email.text}}\",                          \n\tpassword: \"{{this.params.password}}\",                 \n\t\"is_master\": false,                                \n\t\"id_quyen\": \"{{add_select.selectedOptionValue}}\",    \n\t\"is_open\": true                                    \n}\n\n}\n",
             "status": "SUCCESS"
           }
         },

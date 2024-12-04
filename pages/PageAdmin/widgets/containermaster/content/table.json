@@ -35,13 +35,13 @@
     "email",
     "id",
     "is_master",
-    "customColumn2",
     "chuc_vu",
+    "customColumn2",
     "is_open",
     "customColumn1",
     "id_quyen"
   ],
-  "columnUpdatedAt": 1733233773876,
+  "columnUpdatedAt": 1733305783152,
   "columnWidthMap": {
     "chuc_vu": 173,
     "customColumn1": 60,
@@ -99,10 +99,10 @@
       "key": "primaryColumns.is_open.computedValue"
     },
     {
-      "key": "primaryColumns.chuc_vu.computedValue"
+      "key": "primaryColumns.id_quyen.computedValue"
     },
     {
-      "key": "primaryColumns.id_quyen.computedValue"
+      "key": "primaryColumns.chuc_vu.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -166,7 +166,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "chuc_vu",
-      "index": 5,
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,

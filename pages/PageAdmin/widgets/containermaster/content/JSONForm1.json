@@ -156,15 +156,6 @@
       "key": "schema.__root_schema__.children.is_open.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.chuc_vu.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.chuc_vu.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.chuc_vu.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.id_quyen.defaultValue"
     },
     {
@@ -174,11 +165,27 @@
       "key": "schema.__root_schema__.children.id_quyen.borderRadius"
     },
     {
+      "key": "schema.__root_schema__.children.chuc_vu.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.chuc_vu.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.chuc_vu.accentColor"
+    },
+    {
       "key": "schema.__root_schema__.children.is_open.borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.is_master.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_open.defaultValue"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -239,11 +246,11 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Chức vụ",
+          "label": "Chuc Vu",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "chuc_vu",
-          "position": 5,
-          "sourceData": "Điều phối viên"
+          "position": 6,
+          "sourceData": "Quản lý"
         },
         "email": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -309,7 +316,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id_quyen",
           "position": 6,
-          "sourceData": 3
+          "sourceData": 4
         },
         "is_master": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",

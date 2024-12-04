@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "674833e82451335b46a6795b_a9ff3076-647c-4b58-bf2b-8ad1d7fe3860",
+  "gitSyncId": "674ffbcd2618fa62f837f29d_c8c04244-d8bc-4b51-b21a-f741f517bff1",
   "id": "pageYeuCauCuuTro_getNguonLucs",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
@@ -97,6 +97,7 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
+    "fullyQualifiedName": "getNguonLucs",
     "name": "getNguonLucs",
     "pageId": "pageYeuCauCuuTro",
     "userSetOnLoad": false

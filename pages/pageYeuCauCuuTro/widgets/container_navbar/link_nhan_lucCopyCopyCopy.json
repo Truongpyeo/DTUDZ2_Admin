@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pagePhanPhoiNguonLuc', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "3m6ieg361r",
+  "parentId": "k8hp7holoi",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 45,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "xx9lgz9lhh",
+  "widgetId": "007ij7ah0t",
   "widgetName": "link_nhan_lucCopyCopyCopy"
 }

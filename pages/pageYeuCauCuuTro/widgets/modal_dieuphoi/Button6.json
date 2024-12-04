@@ -33,7 +33,7 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(modal_dieuphoi.name);}}",
-  "parentId": "x6i6hjm13l",
+  "parentId": "h369e0o9wq",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -44,6 +44,6 @@
   "topRow": 41,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "q5fp8fqijo",
+  "widgetId": "hlj0mljl9k",
   "widgetName": "Button6"
 }

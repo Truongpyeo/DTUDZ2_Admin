@@ -31,13 +31,13 @@
   "objectFit": "contain",
   "onClick": "{{navigateTo('MASTER_ADMIN', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 3.7119140625,
-  "parentId": "3m6ieg361r",
+  "parentId": "k8hp7holoi",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 61,
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "w750cuq567",
+  "widgetId": "qle9xgmyfm",
   "widgetName": "Image1"
 }

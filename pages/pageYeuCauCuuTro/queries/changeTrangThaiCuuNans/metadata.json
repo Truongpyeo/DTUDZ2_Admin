@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "674833e82451335b46a6795b_fa1738c3-b36c-449f-9b76-5bafa00f71c5",
+  "gitSyncId": "674ffbcd2618fa62f837f29d_123129ce-d55d-4934-acfb-86fecd9abbd6",
   "id": "pageYeuCauCuuTro_changeTrangThaiCuuNans",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"update\": \"thong_tin_cuu_nans\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table.triggeredRow.id}}\n}\n,\n    \"u\": {\n    \"$set\": {\n        \"tinh_trang\": {{table.triggeredRow.tinh_trang === 1 ? 0 : 1}}\n    }\n}\n,\n    \"multi\": false,\n  }]\n}\n",
+            "data": "{\n  \"update\": \"thong_tin_cuu_nans\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table.triggeredRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {\n\t\t\"tinh_trang\": {{table.triggeredRow.tinh_trang === true ? false : true}}\n\t}\n}\n,\n    \"multi\": false,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -81,7 +81,7 @@
             "data": "{\n  \"id\": {{table.triggeredRow.id}}\n}\n"
           },
           "update": {
-            "data": "{\n    \"$set\": {\n        \"tinh_trang\": {{table.triggeredRow.tinh_trang === 1 ? 0 : 1}}\n    }\n}\n"
+            "data": "{\n\t\"$set\": {\n\t\t\"tinh_trang\": {{table.triggeredRow.tinh_trang === true ? false : true}}\n\t}\n}\n"
           }
         }
       },
@@ -104,6 +104,7 @@
       }
     ],
     "executeOnLoad": false,
+    "fullyQualifiedName": "changeTrangThaiCuuNans",
     "name": "changeTrangThaiCuuNans",
     "pageId": "pageYeuCauCuuTro",
     "userSetOnLoad": false

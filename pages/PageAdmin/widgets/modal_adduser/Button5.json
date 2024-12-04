@@ -33,7 +33,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{JSObject1.actionCreateAdmin();\nJSObject1.actionCreateAdmin();}}",
+  "onClick": "{{JSObject1.actionCreateAdmin();}}",
   "originalBottomRow": 52,
   "originalTopRow": 48,
   "parentId": "jya3hsjvmy",

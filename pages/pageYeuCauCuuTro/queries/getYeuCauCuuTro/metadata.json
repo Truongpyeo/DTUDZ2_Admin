@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "674833e82451335b46a6795b_134ed7f6-7f98-425f-abf7-ce7003b38c6e",
+  "gitSyncId": "674ffbcd2618fa62f837f29d_f666d800-133f-4f62-82e3-33f570a60da3",
   "id": "pageYeuCauCuuTro_getYeuCauCuuTro",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
@@ -110,6 +110,7 @@
       }
     ],
     "executeOnLoad": true,
+    "fullyQualifiedName": "getYeuCauCuuTro",
     "name": "getYeuCauCuuTro",
     "pageId": "pageYeuCauCuuTro",
     "userSetOnLoad": false

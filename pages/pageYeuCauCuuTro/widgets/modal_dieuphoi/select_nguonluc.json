@@ -52,7 +52,7 @@
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 9.9375,
-  "parentId": "x6i6hjm13l",
+  "parentId": "h369e0o9wq",
   "parentRowSpace": 10,
   "placeholderText": "Chọn tổ chức",
   "renderMode": "CANVAS",
@@ -63,6 +63,6 @@
   "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "4yt6z5gcs1",
+  "widgetId": "6xtq9l0gqs",
   "widgetName": "select_nguonluc"
 }

@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "applicationDetail": {
     "appPositioning": {
@@ -66,10 +66,6 @@
       "isDefault": false
     },
     {
-      "id": "pageYeuCauCuuTro",
-      "isDefault": false
-    },
-    {
       "id": "pageThongBao",
       "isDefault": false
     },
@@ -90,12 +86,16 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "pageYeuCauCuuTro",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
       "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "unpublishedApplicationDetail": {
     "appPositioning": {

@@ -35,7 +35,7 @@
   "onClick": "{{closeModal(Modal2.name);}}",
   "originalBottomRow": 24,
   "originalTopRow": 20,
-  "parentId": "t09m6y8s5c",
+  "parentId": "lqfegz071k",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -46,6 +46,6 @@
   "topRow": 15,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "l23brifayt",
+  "widgetId": "03p2mwplnf",
   "widgetName": "Button10"
 }

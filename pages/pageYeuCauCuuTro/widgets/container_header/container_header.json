@@ -4,7 +4,7 @@
   "borderColor": "transparent",
   "borderRadius": "5px",
   "borderWidth": "",
-  "bottomRow": 7,
+  "bottomRow": 8,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "boxShadowColor": "",
   "children": [
@@ -24,14 +24,14 @@
       "leftColumn": 0,
       "minHeight": 400,
       "parentColumnSpace": 1,
-      "parentId": "ioixvax5p9",
+      "parentId": "g1kpm9jb25",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 433.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "65ako79gw2",
+      "widgetId": "393tnse17a",
       "widgetName": "Canvas1CopyCopy1Copy"
     }
   ],
@@ -62,9 +62,9 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
-  "topRow": 0,
+  "topRow": 1,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "ioixvax5p9",
+  "widgetId": "g1kpm9jb25",
   "widgetName": "container_header"
 }

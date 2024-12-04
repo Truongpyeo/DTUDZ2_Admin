@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 257,
+  "bottomRow": 258,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -37,7 +37,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "nvye162vqv",
+      "parentId": "ejd4fknoe8",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,7 +46,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "t09m6y8s5c",
+      "widgetId": "lqfegz071k",
       "widgetName": "Canvas7"
     }
   ],
@@ -76,10 +76,10 @@
   "renderMode": "CANVAS",
   "rightColumn": 42,
   "shouldScrollContents": true,
-  "topRow": 17,
+  "topRow": 18,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "nvye162vqv",
+  "widgetId": "ejd4fknoe8",
   "widgetName": "Modal2",
   "width": 456
 }

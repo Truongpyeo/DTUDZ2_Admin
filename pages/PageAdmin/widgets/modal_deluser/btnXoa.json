@@ -29,7 +29,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{delAdmin.run().then(() => {\n  getAdmins.run();\n  showAlert('Xoá thành công', 'success');\n  closeModal(modal_deluser.name);\n}).catch(() => {\n  showAlert('Lỗi', '');\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "n9nucqk4yh",

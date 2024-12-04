@@ -26,7 +26,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 16.62109375,
-  "parentId": "65ako79gw2",
+  "parentId": "393tnse17a",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
@@ -37,6 +37,6 @@
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "5hgsl9kp3p",
+  "widgetId": "teph5j3874",
   "widgetName": "Tiltle_header"
 }
