@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 61,
+  "bottomRow": 55,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -187,9 +187,6 @@
     },
     {
       "key": "schema.__root_schema__.children.ten_nha_tai_tro.options"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_san_san.borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -219,7 +216,7 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onSubmit": "{{updateNhanLucs.run().then(() => {\n  getNhanLucs.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('cập nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 53,
+  "originalBottomRow": 61,
   "originalTopRow": 4,
   "parentColumnSpace": 19.1484375,
   "parentId": "7q0i5n0p2w",
@@ -270,21 +267,21 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "id",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 7,
-          "sourceData": "32aa14643b084586b811fb622cf5d9ae"
+          "sourceData": 4
         },
         "id_nguon_luc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
@@ -311,18 +308,18 @@
         "is_san_san": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
           "accessor": "is_san_san",
-          "alignWidget": "RIGHT",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
+          "alignWidget": "LEFT",
+          "boxShadow": "none",
           "children": {},
           "dataType": "boolean",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_san_san))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
-          "fieldType": "Checkbox",
+          "fieldType": "Switch",
           "identifier": "is_san_san",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Tình trạng",
+          "label": "Tình Trạng",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_san_san",
           "position": 5,
@@ -344,7 +341,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "So Dien Thoai",
+          "label": "Số điện thoại",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "so_dien_thoai",
           "position": 6,

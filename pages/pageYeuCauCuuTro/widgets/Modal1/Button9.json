@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{themMoi.run().then(() => {\n  changeTrangThaiCuuNans.run();\n  changeNhanLucs.run();\n  changeTrangThaiCuuNans.run();\n  getYeuCauCuuTro.run();\n  getNhanLucByNguonLuc.run();\n  showModal(modal_dieuphoi.name);\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});\nchangeNhanLucs.run();}}",
+  "onClick": "{{JSObject1.createNhanCuuTro();}}",
   "originalBottomRow": 19,
   "originalTopRow": 15,
   "parentId": "ab3ih3k09j",

@@ -12,7 +12,7 @@
             "data": "[ {\"$lookup\": {\"from\": \"thong_tin_cuu_nans\", \"localField\": \"id_thong_tin_cuu_tro\", \"foreignField\": \"id\", \"as\": \"thong_tin_cuu_nan_details\"}}, {\"$unwind\": {\"path\": \"$thong_tin_cuu_nan_details\", \"preserveNullAndEmptyArrays\": true}}, {\"$lookup\": {\"from\": \"nhan_lucs\", \"localField\": \"id_nhan_luc\", \"foreignField\": \"id\", \"as\": \"nhan_luc_details\"}}, {\"$unwind\": {\"path\": \"$nhan_luc_details\", \"preserveNullAndEmptyArrays\": true}}, {\"$lookup\": {\"from\": \"nguoi_dungs\", \"localField\": \"thong_tin_cuu_nan_details.id_nguoi_dung\", \"foreignField\": \"id\", \"as\": \"nguoi_dung_details\"}}, {\"$unwind\": {\"path\": \"$nguoi_dung_details\", \"preserveNullAndEmptyArrays\": true}}, {\"$group\": { \"_id\": \"$id\", \"id_thong_tin_cuu_tro\": {\"$first\": \"$id_thong_tin_cuu_tro\"}, \"id_nhan_luc\": {\"$first\": \"$id_nhan_luc\"}, \"trang_thai\": {\"$first\": \"$trang_thai\"}, \"so_nguoi\": {\"$first\": \"$so_nguoi\"}, \"toa_do_x\": {\"$first\": \"$thong_tin_cuu_nan_details.toa_do_x\"}, \"toa_do_y\": {\"$first\": \"$thong_tin_cuu_nan_details.toa_do_y\"}, \"noi_dung\": {\"$first\": \"$thong_tin_cuu_nan_details.noi_dung\"}, \"is_sos\": {\"$first\": \"$thong_tin_cuu_nan_details.is_sos\"}, \"is_tro_cap\": {\"$first\": \"$thong_tin_cuu_nan_details.is_tro_cap\"}, \"ho_va_ten_nhan_luc\": {\"$first\": \"$nhan_luc_details.ten_nhan_luc\"}, \"email_nhan_luc\": {\"$first\": \"$nhan_luc_details.email\"}, \"so_dien_thoai_nhan_luc\": {\"$first\": \"$nhan_luc_details.so_dien_thoai\"}, \"ho_va_ten_nguoi_dung\": {\"$first\": \"$nguoi_dung_details.ho_va_ten\"}, \"email_nguoi_dung\": {\"$first\": \"$nguoi_dung_details.email\"}, \"so_dien_thoai_nguoi_dung\": {\"$first\": \"$nguoi_dung_details.so_dien_thoai\"}, \"dia_chi_nguoi_dung\": {\"$first\": \"$nguoi_dung_details.dia_chi\"} }}, {\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"}, {\"$limit\": \"{{table.pageSize}}\"}, {\"$project\": { \"_id\": 0, \"id\": \"$_id\", \"id_thong_tin_cuu_tro\": 1, \"id_nhan_luc\": 1, \"trang_thai\": 1, \"so_nguoi\": 1, \"toa_do_x\": 1, \"toa_do_y\": 1, \"noi_dung\": 1, \"is_sos\": 1, \"is_tro_cap\": 1, \"ho_va_ten_nhan_luc\": 1, \"email_nhan_luc\": 1, \"so_dien_thoai_nhan_luc\": 1, \"ho_va_ten_nguoi_dung\": 1, \"email_nguoi_dung\": 1, \"so_dien_thoai_nguoi_dung\": 1, \"dia_chi_nguoi_dung\": 1 }} ]"
           },
           "limit": {
-            "data": ""
+            "data": "{{table.pageSize}}"
           }
         },
         "collection": {
@@ -101,6 +101,9 @@
       },
       {
         "key": "formData.aggregate.arrayPipelines.data"
+      },
+      {
+        "key": "formData.aggregate.limit.data"
       }
     ],
     "executeOnLoad": true,

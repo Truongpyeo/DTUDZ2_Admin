@@ -29,7 +29,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{unDieuPhoi.run().then(() => {\n  huyNhanLucs.run();\n  getYeuCauCuuTro.run();\n  getHuycutro.run();\n  showAlert('Huỷ thành công', 'success');\n  showModal(modal_huydieuphoi.name);\n}).catch(() => {\n  showAlert('Thất bại', 'error');\n});}}",
+  "onClick": "{{unDieuPhoi.run().then(() => {\n  huyNhanLucs.run();\n  getYeuCauCuuTro.run();\n  getHuycutro.run();\n  showAlert('Huỷ thành công', 'success');\n  showModal(modal_huydieuphoi.name);\n  updateNhanCuuTro.run();\n}).catch(() => {\n  showAlert('Thất bại', 'error');\n});}}",
   "originalBottomRow": 24,
   "originalTopRow": 20,
   "parentId": "lqfegz071k",

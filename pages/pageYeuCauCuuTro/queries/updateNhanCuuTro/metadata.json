@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674ffbcd2618fa62f837f29d_3dbe9da4-634e-4aac-8169-ccc29bf73a2d",
-  "id": "pageYeuCauCuuTro_themMoi",
+  "gitSyncId": "674ffbcd2618fa62f837f29d_6b528f08-bffc-4abe-b8ff-fcae9a32c5f6",
+  "id": "pageYeuCauCuuTro_updateNhanCuuTro",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -19,7 +19,7 @@
           "data": "nhan_cuu_tros"
         },
         "command": {
-          "data": "INSERT"
+          "data": "UPDATE"
         },
         "count": {
           "query": {
@@ -61,12 +61,12 @@
         },
         "insert": {
           "documents": {
-            "data": "{\n\t\"id\":\"{{this.params.id}}\",\n\t\"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\",\n\t\"id_nhan_luc\": \"{{Table1.triggeredRow.id}}\",\n\t\"trang_thai\": \"Đang chờ xử lý\",\n\t\"so_nguoi\": 5\n}"
+            "data": ""
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"insert\": \"nhan_cuu_tros\",\n  \"documents\": {\n\t\"id\":\"{{this.params.id}}\",\n\t\"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\",\n\t\"id_nhan_luc\": \"{{Table1.triggeredRow.id}}\",\n\t\"trang_thai\": \"Đang chờ xử lý\",\n\t\"so_nguoi\": 5\n}\n}\n",
+            "data": "{\n  \"update\": \"nhan_cuu_tros\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table_huydieuphoi.triggeredRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {\n\t\t\"trang_thai\": \"Đã Huỷ\"\n\t}\n}\n,\n    \"multi\": false,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -78,10 +78,10 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": ""
+            "data": "{\n  \"id\": {{table_huydieuphoi.triggeredRow.id}}\n}\n"
           },
           "update": {
-            "data": ""
+            "data": "{\n\t\"$set\": {\n\t\t\"trang_thai\": \"Đã Huỷ\"\n\t}\n}\n"
           }
         }
       },
@@ -97,12 +97,11 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.insert.documents.data"
+        "key": "formData.updateMany.query.data"
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "themMoi",
-    "name": "themMoi",
+    "name": "updateNhanCuuTro",
     "pageId": "pageYeuCauCuuTro",
     "userSetOnLoad": false
   }
