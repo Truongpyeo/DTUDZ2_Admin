@@ -18,9 +18,10 @@ export default {
 
 	actionLogin: async () => {
 		try{
-			let [user] = await FindUser.data;
+			const [user] = await FindUser.run();
 			var check = await this.comparePassword(password.text, user.password);
-			await storeValue("id_admin", 111);
+			storeValue("id_admin", user.id);
+
 			if(check) {
 				user.token = await this.createToken(user)
 					.then( async () => await UpdateToken.run(user));

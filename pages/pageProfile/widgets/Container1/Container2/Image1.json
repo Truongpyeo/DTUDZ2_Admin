@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
-  "borderRadius": "5.5rem",
-  "bottomRow": 22,
+  "borderRadius": "45%",
+  "bottomRow": 23,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "defaultImage": "https://assets.appsmith.com/widgets/default.png",
   "dynamicBindingPathList": [],

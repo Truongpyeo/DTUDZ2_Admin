@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 71,
+  "bottomRow": 42,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -105,6 +105,15 @@
       "key": "resetButtonStyles.borderRadius"
     },
     {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
       "key": "schema.__root_schema__.children.email.defaultValue"
     },
     {
@@ -138,16 +147,7 @@
       "key": "schema.__root_schema__.children.is_master.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.is_master.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.is_open.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_open.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_open.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.password.defaultValue"
@@ -168,19 +168,46 @@
       "key": "schema.__root_schema__.children.username.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.defaultValue"
+      "key": "sourceData"
     },
     {
-      "key": "schema.__root_schema__.borderRadius"
+      "key": "schema.__root_schema__.children._id.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.cellBorderRadius"
+      "key": "schema.__root_schema__.children._id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children._id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.token.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.token.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.token.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_open.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_open.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_quyen.options"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_master.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.is_open.defaultValue"
     }
   ],
   "dynamicTriggerPathList": [
@@ -204,7 +231,7 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onSubmit": "{{Insert_admins1.run(() => {\n            showAlert(\"undefined\");\n            \n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
-  "originalBottomRow": 71,
+  "originalBottomRow": 49,
   "originalTopRow": 0,
   "parentColumnSpace": 19.5,
   "parentId": "md67yf1zm6",
@@ -227,6 +254,28 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "accessor": "_id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData._id))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "_id",
+          "position": 7,
+          "sourceData": "67501bdd5f5b09ac2d8163d5"
+        },
         "email": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "email",
@@ -244,9 +293,10 @@
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Email",
-          "labelTextSize": "0.875rem",
+          "labelStyle": "",
+          "labelTextSize": "1rem",
           "originalIdentifier": "email",
-          "position": 0,
+          "position": 1,
           "sourceData": ""
         },
         "id": {
@@ -264,11 +314,11 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
-          "position": 1,
+          "position": 2,
           "sourceData": 0
         },
         "id_quyen": {
@@ -279,63 +329,60 @@
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_quyen))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "id_quyen",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Id Quyen",
+          "label": "Quyền",
           "labelTextSize": "0.875rem",
+          "options": "{{ getQuyens.data.map(item => ({\n\tlabel: item.ten_chuc_vu,              \n\tvalue: item.id      \n}))}}",
           "originalIdentifier": "id_quyen",
-          "position": 2,
+          "position": 3,
+          "serverSideFiltering": false,
           "sourceData": 0
         },
         "is_master": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "is_master",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "alignWidget": "LEFT",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "boolean",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_master))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Switch",
           "identifier": "is_master",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Is Master",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_master",
-          "position": 3,
-          "sourceData": ""
+          "position": 4,
+          "sourceData": false
         },
         "is_open": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "is_open",
+          "alignWidget": "LEFT",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "boolean",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_open))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Checkbox",
           "identifier": "is_open",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Is Open",
+          "isVisible": false,
+          "label": "Is open",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_open",
-          "position": 4,
-          "sourceData": ""
+          "position": 5,
+          "sourceData": true
         },
         "password": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -352,12 +399,33 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Password",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "password",
-          "position": 5,
+          "position": 6,
           "sourceData": ""
+        },
+        "token": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "accessor": "token",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.token))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "token",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Token",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "token",
+          "position": 8
         },
         "username": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -375,10 +443,10 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Username",
+          "label": "Họ và Tên",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "username",
-          "position": 6,
+          "position": 0,
           "sourceData": ""
         }
       },
@@ -407,15 +475,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": {
-    "email": "",
-    "id": 0,
-    "id_quyen": 0,
-    "is_master": "",
-    "is_open": "",
-    "password": "",
-    "username": ""
-  },
+  "sourceData": "{{getProfile.data[0]}}",
   "submitButtonLabel": "Đổi mật khẩu",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
