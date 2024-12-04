@@ -28,7 +28,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "parentId": "fe4z1uo991",
+  "parentId": "lra1w4xp5a",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -39,6 +39,6 @@
   "topRow": 37,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "0wgvujrt1b",
+  "widgetId": "hq82qv5k8n",
   "widgetName": "btn_repass"
 }

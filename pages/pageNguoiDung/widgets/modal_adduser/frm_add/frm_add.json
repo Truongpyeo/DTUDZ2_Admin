@@ -28,7 +28,7 @@
       "mobileRightColumn": 65.75,
       "mobileTopRow": 0,
       "parentColumnSpace": 1,
-      "parentId": "yg8um79539",
+      "parentId": "9augmxbgk2",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -36,7 +36,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "olrlmmkppn",
+      "widgetId": "ocg0hkpf0v",
       "widgetName": "Canvas2Copy1"
     }
   ],
@@ -69,7 +69,7 @@
   "originalBottomRow": 48,
   "originalTopRow": 6,
   "parentColumnSpace": 8.21875,
-  "parentId": "zxag5u5l75",
+  "parentId": "4o0ry1tsgo",
   "parentRowSpace": 10,
   "positioning": "fixed",
   "renderMode": "CANVAS",
@@ -81,6 +81,6 @@
   "shouldScrollContents": true,
   "topRow": 5,
   "type": "FORM_WIDGET",
-  "widgetId": "yg8um79539",
+  "widgetId": "9augmxbgk2",
   "widgetName": "frm_add"
 }

@@ -9,14 +9,16 @@
       "formData": {
         "aggregate": {
           "arrayPipelines": {
-            "data": "[\n    {\n        \"$lookup\": {\n            \"from\": \"loai_nguon_lucs\",\n            \"localField\": \"id_loai_nguon_luc\",\n            \"foreignField\": \"id\",\n            \"as\": \"loai_nguon_luc_details\"\n        }\n    },\n    {\n        \"$unwind\": {\n            \"path\": \"$loai_nguon_luc_details\",\n            \"preserveNullAndEmptyArrays\": true\n        }\n    },\n    {\n        \"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n    },\n    {\n        \"$limit\": \"{{table.pageSize}}\"\n    },\n    {\n        \"$project\": {\n            \"_id\": 0,\n            \"id\": 1,\n            \"username\": 1,\n            \"email\": 1,\n            \"ten_nha_tai_tro\": 1,\n            \"id_loai_nguon_luc\": 1,\n            \"loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\",\n            \"loai_icon\": \"$loai_nguon_luc_details.icon\"\n        }\n    }\n]"
+            "data": "[\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"loai_nguon_lucs\",\n\t\t\t\"localField\": \"id_loai_nguon_luc\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"loai_nguon_luc_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$loai_nguon_luc_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\": 1,\n\t\t\t\"username\": 1,\n\t\t\t\"email\": 1,\n\t\t\t\"ten_nha_tai_tro\": 1,\n\t\t\t\"id_loai_nguon_luc\": 1,\n\t\t\t\"loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\",\n\t\t\t\"loai_icon\": \"$loai_nguon_luc_details.icon\"\n\t\t}\n\t}\n]"
           },
           "limit": {
-            "data": ""
+            "data": "{{table.pageSize}}"
           }
         },
         "collection": {
-          "data": "nguon_lucs"
+          "componentData": "nguon_lucs",
+          "data": "nguon_lucs",
+          "viewType": "json"
         },
         "command": {
           "data": "AGGREGATE"
@@ -66,7 +68,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"aggregate\": \"nguon_lucs\",\n  \"pipeline\": [\n    {\n        \"$lookup\": {\n            \"from\": \"loai_nguon_lucs\",\n            \"localField\": \"id_loai_nguon_luc\",\n            \"foreignField\": \"id\",\n            \"as\": \"loai_nguon_luc_details\"\n        }\n    },\n    {\n        \"$unwind\": {\n            \"path\": \"$loai_nguon_luc_details\",\n            \"preserveNullAndEmptyArrays\": true\n        }\n    },\n    {\n        \"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n    },\n    {\n        \"$limit\": \"{{table.pageSize}}\"\n    },\n    {\n        \"$project\": {\n            \"_id\": 0,\n            \"id\": 1,\n            \"username\": 1,\n            \"email\": 1,\n            \"ten_nha_tai_tro\": 1,\n            \"id_loai_nguon_luc\": 1,\n            \"loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\",\n            \"loai_icon\": \"$loai_nguon_luc_details.icon\"\n        }\n    }\n],\n  \"cursor\": {}\n}\n",
+            "data": "{\n  \"aggregate\": \"nguon_lucs\",\n  \"pipeline\": [\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"loai_nguon_lucs\",\n\t\t\t\"localField\": \"id_loai_nguon_luc\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"loai_nguon_luc_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$loai_nguon_luc_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\": 1,\n\t\t\t\"username\": 1,\n\t\t\t\"email\": 1,\n\t\t\t\"ten_nha_tai_tro\": 1,\n\t\t\t\"id_loai_nguon_luc\": 1,\n\t\t\t\"loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\",\n\t\t\t\"loai_icon\": \"$loai_nguon_luc_details.icon\"\n\t\t}\n\t}\n],\n  \"cursor\": {}\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -104,6 +106,9 @@
       },
       {
         "key": "formData.aggregate.arrayPipelines.data"
+      },
+      {
+        "key": "formData.aggregate.limit.data"
       }
     ],
     "executeOnLoad": true,

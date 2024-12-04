@@ -44,7 +44,7 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "parentColumnSpace": 7.15625,
-  "parentId": "fe4z1uo991",
+  "parentId": "lra1w4xp5a",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -56,6 +56,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "{{txt_newpass2.text.length>0}}",
   "version": 2,
-  "widgetId": "4s89uljld3",
+  "widgetId": "akbcx2kg6g",
   "widgetName": "txt_newpass2"
 }

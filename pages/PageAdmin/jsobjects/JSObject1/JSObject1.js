@@ -55,17 +55,7 @@ export default {
 		showAlert("Admin đã được tạo thành công!", "success");
 		closeModal(modal_adduser.name);
 
-	},
-	delAdmin: async () => {
-		// Assuming `getAdmins` is a query to fetch existing admins
-		const admin = await findAdminByid.data[0] ;
-		console.log(admin);
-		const uuid = UUID.genV4();
-		await insertAdmins.run(obj);
-		showAlert("Admin đã được tạo thành công!", "success");
-		closeModal(modal_adduser.name);
-
-	},
+	}
 
 
 

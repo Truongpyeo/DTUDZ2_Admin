@@ -37,7 +37,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "0op6o6mwkd",
+      "parentId": "8alv6s99e6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,7 +46,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "s818wgym08",
+      "widgetId": "fmnm0mdiod",
       "widgetName": "Canvas4"
     }
   ],
@@ -79,7 +79,7 @@
   "topRow": 139,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "0op6o6mwkd",
+  "widgetId": "8alv6s99e6",
   "widgetName": "modal_adduser",
   "width": 890
 }

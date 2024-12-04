@@ -43,7 +43,7 @@
   "minDynamicHeight": 4,
   "minWidth": 450,
   "parentColumnSpace": 8.21875,
-  "parentId": "olrlmmkppn",
+  "parentId": "ocg0hkpf0v",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -61,6 +61,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "{{ inp_fullname.text.length > 0 }}",
   "version": 2,
-  "widgetId": "wle28ic399",
+  "widgetId": "1ncuoat78j",
   "widgetName": "inp_fullname"
 }

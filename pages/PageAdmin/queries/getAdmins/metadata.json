@@ -9,10 +9,10 @@
       "formData": {
         "aggregate": {
           "arrayPipelines": {
-            "data": "[\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"chuc_vus\",\n\t\t\t\"localField\": \"id_quyen\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"chuc_vu_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$chuc_vu_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\t{\n\t\t\"$limit\": \"{{table.pageSize}}\"\n\t},\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\":1,\n\t\t\t\"username\": 1,\n\t\t\t\"email\": 1,\n\t\t\t\"is_master\": 1,\n\t\t\t\"is_open\": 1,\n\t\t\t\"id_quyen\": 1,\n\t\t\t\"chuc_vu\": \"$chuc_vu_details.ten_chuc_vu\"\n\t\t}\n\t}\n]"
+            "data": "[\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"chuc_vus\",\n\t\t\t\"localField\": \"id_quyen\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"chuc_vu_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$chuc_vu_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\":1,\n\t\t\t\"username\": 1,\n\t\t\t\"email\": 1,\n\t\t\t\"is_master\": 1,\n\t\t\t\"is_open\": 1,\n\t\t\t\"id_quyen\": 1,\n\t\t\t\"chuc_vu\": \"$chuc_vu_details.ten_chuc_vu\"\n\t\t}\n\t}\n]"
           },
           "limit": {
-            "data": ""
+            "data": "{{table.pageSize}}"
           }
         },
         "body": {
@@ -110,6 +110,9 @@
       },
       {
         "key": "formData.aggregate.arrayPipelines.data"
+      },
+      {
+        "key": "formData.aggregate.limit.data"
       }
     ],
     "executeOnLoad": true,

@@ -43,7 +43,7 @@
   "minDynamicHeight": 4,
   "minWidth": 450,
   "parentColumnSpace": 8.21875,
-  "parentId": "rfkqtah0n7",
+  "parentId": "jp9img57ha",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -61,6 +61,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "{{ inp_nha_tai_tro.text.length > 0 }}",
   "version": 2,
-  "widgetId": "4847i3s7rj",
+  "widgetId": "au4cu8yupi",
   "widgetName": "inp_nha_tai_tro"
 }

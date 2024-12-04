@@ -35,7 +35,7 @@
   "needsErrorInfo": false,
   "overflow": "NONE",
   "parentColumnSpace": 6.9375,
-  "parentId": "jh9wsatt9d",
+  "parentId": "8jd87nakak",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -49,6 +49,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "wjxiyrxq31",
+  "widgetId": "5dhx7jzv03",
   "widgetName": "Text4Copy"
 }

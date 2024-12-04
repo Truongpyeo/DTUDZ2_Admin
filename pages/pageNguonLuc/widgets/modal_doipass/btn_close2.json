@@ -33,7 +33,7 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(modal_doipass.name);}}",
-  "parentId": "fe4z1uo991",
+  "parentId": "lra1w4xp5a",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -44,6 +44,6 @@
   "topRow": 37,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "8o7be4q38h",
+  "widgetId": "m5f4yvbd5b",
   "widgetName": "btn_close2"
 }

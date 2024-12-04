@@ -43,7 +43,7 @@
   "minDynamicHeight": 4,
   "minWidth": 450,
   "parentColumnSpace": 8.21875,
-  "parentId": "p6d10xi3tt",
+  "parentId": "4ahafxqmna",
   "parentRowSpace": 10,
   "regex": "",
   "renderMode": "CANVAS",
@@ -62,6 +62,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "{{ input_pass.text.length > 0 }}",
   "version": 2,
-  "widgetId": "594umticsq",
+  "widgetId": "jao8nneevm",
   "widgetName": "input_pass"
 }

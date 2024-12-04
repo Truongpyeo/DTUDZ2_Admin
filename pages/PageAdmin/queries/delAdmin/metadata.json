@@ -31,7 +31,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ id: {{table.selectedRow.id}}}"
+            "data": "{ id: {{table.triggeredRow.id}}}"
           }
         },
         "distinct": {
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"delete\": \"admins\",\n  \"deletes\": [{\n    \"q\": { id: {{table.selectedRow.id}}},\n    \"limit\": 1,\n  }]\n}\n",
+            "data": "{\n  \"delete\": \"admins\",\n  \"deletes\": [{\n    \"q\": { id: {{table.triggeredRow.id}}},\n    \"limit\": 1,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },

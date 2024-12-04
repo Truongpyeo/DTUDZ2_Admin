@@ -9,10 +9,10 @@
       "formData": {
         "aggregate": {
           "arrayPipelines": {
-            "data": "[\n    {\n        \"$lookup\": {\n            \"from\": \"nguon_lucs\",\n            \"localField\": \"id_nguon_luc\",\n            \"foreignField\": \"id\",\n            \"as\": \"nguon_luc_details\"\n        }\n    },\n    {\n        \"$unwind\": {\n            \"path\": \"$nguon_luc_details\",\n            \"preserveNullAndEmptyArrays\": true\n        }\n    },\n    {\n        \"$lookup\": {\n            \"from\": \"loai_nguon_lucs\",\n            \"localField\": \"nguon_luc_details.id_loai_nguon_luc\",\n            \"foreignField\": \"id\",\n            \"as\": \"loai_nguon_luc_details\"\n        }\n    },\n    {\n        \"$unwind\": {\n            \"path\": \"$loai_nguon_luc_details\",\n            \"preserveNullAndEmptyArrays\": true\n        }\n    },\n    {\n        \"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n    },\n    {\n        \"$limit\": \"{{table.pageSize}}\"\n    },\n    {\n        \"$project\": {\n            \"_id\": 0,\n            \"id\": 1,\n            \"ten_nhan_luc\": 1,\n            \"chuc_vu\": 1,\n            \"is_san_san\": 1,\n            \"email\": 1,\n            \"so_dien_thoai\": 1,\n            \"id_nguon_luc\": 1,\n            \"ten_nha_tai_tro\": \"$nguon_luc_details.ten_nha_tai_tro\",\n            \"ten_loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\"\n        }\n    }\n]"
+            "data": "[\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"nguon_lucs\",\n\t\t\t\"localField\": \"id_nguon_luc\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"nguon_luc_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$nguon_luc_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"loai_nguon_lucs\",\n\t\t\t\"localField\": \"nguon_luc_details.id_loai_nguon_luc\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"loai_nguon_luc_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$loai_nguon_luc_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\": 1,\n\t\t\t\"ten_nhan_luc\": 1,\n\t\t\t\"chuc_vu\": 1,\n\t\t\t\"is_san_san\": 1,\n\t\t\t\"email\": 1,\n\t\t\t\"so_dien_thoai\": 1,\n\t\t\t\"id_nguon_luc\": 1,\n\t\t\t\"ten_nha_tai_tro\": \"$nguon_luc_details.ten_nha_tai_tro\",\n\t\t\t\"ten_loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\"\n\t\t}\n\t}\n]"
           },
           "limit": {
-            "data": ""
+            "data": "{{table.pageSize}}"
           }
         },
         "collection": {
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"aggregate\": \"nhan_lucs\",\n  \"pipeline\": [\n    {\n        \"$lookup\": {\n            \"from\": \"nguon_lucs\",\n            \"localField\": \"id_nguon_luc\",\n            \"foreignField\": \"id\",\n            \"as\": \"nguon_luc_details\"\n        }\n    },\n    {\n        \"$unwind\": {\n            \"path\": \"$nguon_luc_details\",\n            \"preserveNullAndEmptyArrays\": true\n        }\n    },\n    {\n        \"$lookup\": {\n            \"from\": \"loai_nguon_lucs\",\n            \"localField\": \"nguon_luc_details.id_loai_nguon_luc\",\n            \"foreignField\": \"id\",\n            \"as\": \"loai_nguon_luc_details\"\n        }\n    },\n    {\n        \"$unwind\": {\n            \"path\": \"$loai_nguon_luc_details\",\n            \"preserveNullAndEmptyArrays\": true\n        }\n    },\n    {\n        \"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n    },\n    {\n        \"$limit\": \"{{table.pageSize}}\"\n    },\n    {\n        \"$project\": {\n            \"_id\": 0,\n            \"id\": 1,\n            \"ten_nhan_luc\": 1,\n            \"chuc_vu\": 1,\n            \"is_san_san\": 1,\n            \"email\": 1,\n            \"so_dien_thoai\": 1,\n            \"id_nguon_luc\": 1,\n            \"ten_nha_tai_tro\": \"$nguon_luc_details.ten_nha_tai_tro\",\n            \"ten_loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\"\n        }\n    }\n],\n  \"cursor\": {}\n}\n",
+            "data": "{\n  \"aggregate\": \"nhan_lucs\",\n  \"pipeline\": [\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"nguon_lucs\",\n\t\t\t\"localField\": \"id_nguon_luc\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"nguon_luc_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$nguon_luc_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"loai_nguon_lucs\",\n\t\t\t\"localField\": \"nguon_luc_details.id_loai_nguon_luc\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"loai_nguon_luc_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$loai_nguon_luc_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\": 1,\n\t\t\t\"ten_nhan_luc\": 1,\n\t\t\t\"chuc_vu\": 1,\n\t\t\t\"is_san_san\": 1,\n\t\t\t\"email\": 1,\n\t\t\t\"so_dien_thoai\": 1,\n\t\t\t\"id_nguon_luc\": 1,\n\t\t\t\"ten_nha_tai_tro\": \"$nguon_luc_details.ten_nha_tai_tro\",\n\t\t\t\"ten_loai_nguon_luc\": \"$loai_nguon_luc_details.ten_loai_nguon_luc\"\n\t\t}\n\t}\n],\n  \"cursor\": {}\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -104,6 +104,9 @@
       },
       {
         "key": "formData.aggregate.arrayPipelines.data"
+      },
+      {
+        "key": "formData.aggregate.limit.data"
       }
     ],
     "executeOnLoad": true,

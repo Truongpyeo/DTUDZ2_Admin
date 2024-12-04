@@ -29,10 +29,10 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{delNhanSu.run().then(() => {\n  getNhanLucs.run();\n  closeModal(modal_deluserCopy.name);\n  showAlert('Xoá thành công', 'success');\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
-  "parentId": "jh9wsatt9d",
+  "parentId": "8jd87nakak",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -43,6 +43,6 @@
   "topRow": 17,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "sw6w84adb8",
+  "widgetId": "8fv67ulrhr",
   "widgetName": "btnXoaCopy"
 }

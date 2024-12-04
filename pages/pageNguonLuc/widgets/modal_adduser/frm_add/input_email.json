@@ -43,7 +43,7 @@
   "minDynamicHeight": 4,
   "minWidth": 450,
   "parentColumnSpace": 8.21875,
-  "parentId": "rfkqtah0n7",
+  "parentId": "jp9img57ha",
   "parentRowSpace": 10,
   "regex": "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",
   "renderMode": "CANVAS",
@@ -62,6 +62,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "{{ input_email.text.length > 0 }}",
   "version": 2,
-  "widgetId": "j4ex1mwhu7",
+  "widgetId": "z5v0fzpyfz",
   "widgetName": "input_email"
 }

@@ -43,7 +43,7 @@
   "minDynamicHeight": 4,
   "minWidth": 450,
   "parentColumnSpace": 8.21875,
-  "parentId": "olrlmmkppn",
+  "parentId": "ocg0hkpf0v",
   "parentRowSpace": 10,
   "regex": "",
   "renderMode": "CANVAS",
@@ -62,6 +62,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "{{ input_address.text.length > 0 }}",
   "version": 2,
-  "widgetId": "gghto1sglt",
+  "widgetId": "vjjipwbi2e",
   "widgetName": "input_address"
 }

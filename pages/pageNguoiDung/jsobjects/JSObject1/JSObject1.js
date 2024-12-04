@@ -18,13 +18,14 @@ export default {
 		const password = await this.generatePasswordHash();
 		console.log(password);
 		const uuid = UUID.genV4();
-		console.log(uuid);
+		// console.log(uuid);
 		const obj = {
 			id:uuid.hexNoDelim,
-			so_dien_thoai: input_sdt,
+			// so_dien_thoai: input_sdt,
 			password: password,
 		};
 		await insetUser.run(obj);
+		await getUsers.run();
 		showAlert("Người dùng đã được tạo thành công!", "success");
 		closeModal(modal_adduser.name);
 

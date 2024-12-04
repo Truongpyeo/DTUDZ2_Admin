@@ -32,13 +32,13 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(modal_adduser.name);}}",
-  "parentId": "zxag5u5l75",
+  "parentId": "4o0ry1tsgo",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "sgdmbtgp1q",
+  "widgetId": "eg5ya6fbr9",
   "widgetName": "IconButton3"
 }
