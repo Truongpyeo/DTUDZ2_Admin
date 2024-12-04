@@ -4,6 +4,7 @@ export default {
 		// Mã hóa mật khẩu
 		const password_hash = await dcodeIO.bcrypt.hash(input_pass.text, 10);
 		console.log(password_hash); // Kiểm tra mật khẩu đã mã hóa
+		console.log("okkk"); // Kiểm tra mật khẩu đã mã hóa
 		return password_hash; // Trả về mật khẩu đã mã hóa
 	},
 

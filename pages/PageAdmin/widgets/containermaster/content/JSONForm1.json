@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 47,
+  "bottomRow": 46,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -200,8 +200,8 @@
   "mobileTopRow": 5,
   "needsErrorInfo": false,
   "onSubmit": "{{updateAdmins.run().then(() => {\n  showAlert('Cập nhật thành công', 'success');\n  getAdmins.run();\n}).catch(() => {\n  showAlert('Nhật nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 47,
-  "originalTopRow": 5,
+  "originalBottomRow": 46,
+  "originalTopRow": 4,
   "parentColumnSpace": 18.8896484375,
   "parentId": "gzb0b0our3",
   "parentRowSpace": 10,
@@ -408,7 +408,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "",
-  "topRow": 5,
+  "topRow": 4,
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
