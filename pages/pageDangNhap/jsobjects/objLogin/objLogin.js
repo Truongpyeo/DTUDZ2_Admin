@@ -8,6 +8,7 @@ export default {
 	createToken: async (user) => {
 		var token = jsonwebtoken.sign(user, 'secret');
 		await storeValue("tokenAdmin", token);
+		// await storeValue("id_admin", 11111);
 		return token;
 	},
 
@@ -19,10 +20,11 @@ export default {
 		try{
 			let [user] = await FindUser.data;
 			var check = await this.comparePassword(password.text, user.password);
-			console.log(check);
+			await storeValue("id_admin", 111);
 			if(check) {
 				user.token = await this.createToken(user)
 					.then( async () => await UpdateToken.run(user));
+
 				showAlert("Đăng nhập thành công", "success");
 				navigateTo('MASTER_ADMIN');
 			} else {

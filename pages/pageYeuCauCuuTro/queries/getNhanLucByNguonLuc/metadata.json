@@ -106,7 +106,7 @@
         "key": "formData.find.skip.data"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "getNhanLucByNguonLuc",
     "name": "getNhanLucByNguonLuc",
     "pageId": "pageYeuCauCuuTro",

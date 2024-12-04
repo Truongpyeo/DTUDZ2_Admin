@@ -30,10 +30,6 @@
   "icon": "website",
   "pages": [
     {
-      "id": "Test",
-      "isDefault": false
-    },
-    {
       "id": "Người Dùng",
       "isDefault": false
     },
@@ -87,6 +83,10 @@
     },
     {
       "id": "pageYeuCauCuuTro",
+      "isDefault": false
+    },
+    {
+      "id": "pageProfile",
       "isDefault": false
     }
   ],
