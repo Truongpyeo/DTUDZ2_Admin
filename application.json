@@ -30,14 +30,6 @@
   "icon": "website",
   "pages": [
     {
-      "id": "Người Dùng",
-      "isDefault": false
-    },
-    {
-      "id": "Thong tin cuu nan",
-      "isDefault": false
-    },
-    {
       "id": "MASTER_ADMIN",
       "isDefault": true
     },

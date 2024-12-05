@@ -31,6 +31,7 @@
     }
   },
   "columnOrder": [
+    "customColumn3",
     "ten_nha_tai_tro",
     "email",
     "username",
@@ -41,9 +42,10 @@
     "id_loai_nguon_luc",
     "loai_icon"
   ],
-  "columnUpdatedAt": 1733207901450,
+  "columnUpdatedAt": 1733363953921,
   "columnWidthMap": {
     "customColumn1": 62,
+    "customColumn3": 117,
     "gender": 110,
     "id_loai_nguon_luc": 97
   },
@@ -99,6 +101,9 @@
     },
     {
       "key": "primaryColumns.loai_nguon_luc.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn3.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -219,6 +224,39 @@
       "notation": "standard",
       "onClick": "{{showModal(modal_doipass.name);}}",
       "originalId": "customColumn2",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn3": {
+      "alias": "STT",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentIndex +1))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn3",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "STT",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn3",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,

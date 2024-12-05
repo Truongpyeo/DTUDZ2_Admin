@@ -24,14 +24,14 @@
       "leftColumn": 0,
       "minHeight": 400,
       "parentColumnSpace": 1,
-      "parentId": "qk1cq1eel1",
+      "parentId": "qkxosqqjv7",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 433.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "wo5sgv8c6c",
+      "widgetId": "lwyw8b1fae",
       "widgetName": "Canvas1CopyCopy1Copy"
     }
   ],
@@ -58,13 +58,13 @@
   "originalBottomRow": 109,
   "originalTopRow": 101,
   "parentColumnSpace": 18.0625,
-  "parentId": "y9lxi0gvwb",
+  "parentId": "ltgw7gpqfl",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "qk1cq1eel1",
+  "widgetId": "qkxosqqjv7",
   "widgetName": "container_header"
 }
