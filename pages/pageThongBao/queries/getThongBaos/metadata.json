@@ -9,17 +9,17 @@
       "formData": {
         "aggregate": {
           "arrayPipelines": {
-            "data": ""
+            "data": "[\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"admins\",\n\t\t\t\"localField\": \"id_nguoi_tao\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"admin_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$admin_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\":1,\n\t\t\t\"tieu_de\": 1,\n\t\t\t\"noi_dung\": 1,\n\t\t\t\"id_nguoi_tao\": 1,\n\t\t\t\"is_open\": 1,\n\t\t\t\"ten_nguoi_tao\": \"$admin_details.username\"\n\t\t}\n\t}\n]"
           },
           "limit": {
-            "data": "10"
+            "data": "{{table.pageSize}}"
           }
         },
         "collection": {
           "data": "thong_baos"
         },
         "command": {
-          "data": "FIND"
+          "data": "AGGREGATE"
         },
         "count": {
           "query": {
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"find\": \"thong_baos\",\n  \"skip\": {{(table.pageNo -1) * table.pageSize}},\n  \"limit\": {{table.pageSize}},\n  \"batchSize\": {{table.pageSize}}\n}\n",
+            "data": "{\n  \"aggregate\": \"thong_baos\",\n  \"pipeline\": [\n\t{\n\t\t\"$lookup\": {\n\t\t\t\"from\": \"admins\",\n\t\t\t\"localField\": \"id_nguoi_tao\",\n\t\t\t\"foreignField\": \"id\",\n\t\t\t\"as\": \"admin_details\"\n\t\t}\n\t},\n\t{\n\t\t\"$unwind\": {\n\t\t\t\"path\": \"$admin_details\",\n\t\t\t\"preserveNullAndEmptyArrays\": true\n\t\t}\n\t},\n\t{\n\t\t\"$skip\": \"{{(table.pageNo - 1) * table.pageSize}}\"\n\t},\n\n\t{\n\t\t\"$project\": {\n\t\t\t\"_id\": 0,\n\t\t\t\"id\":1,\n\t\t\t\"tieu_de\": 1,\n\t\t\t\"noi_dung\": 1,\n\t\t\t\"id_nguoi_tao\": 1,\n\t\t\t\"is_open\": 1,\n\t\t\t\"ten_nguoi_tao\": \"$admin_details.username\"\n\t\t}\n\t}\n],\n  \"cursor\": {}\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -101,6 +101,12 @@
       },
       {
         "key": "formData.find.skip.data"
+      },
+      {
+        "key": "formData.aggregate.arrayPipelines.data"
+      },
+      {
+        "key": "formData.aggregate.limit.data"
       }
     ],
     "executeOnLoad": true,

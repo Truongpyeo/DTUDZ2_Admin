@@ -109,7 +109,7 @@
         "key": "formData.aggregate.arrayPipelines.data"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "getYeuCauCuuTro",
     "name": "getYeuCauCuuTro",
     "pageId": "pageYeuCauCuuTro",

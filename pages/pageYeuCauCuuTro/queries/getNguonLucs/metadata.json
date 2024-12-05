@@ -96,7 +96,7 @@
       "pluginId": "mongo-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "getNguonLucs",
     "name": "getNguonLucs",
     "pageId": "pageYeuCauCuuTro",

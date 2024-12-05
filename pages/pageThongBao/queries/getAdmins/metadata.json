@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674ffbcd2618fa62f837f29d_a3f7cf68-5753-42ca-a584-f190fad42984",
-  "id": "pageYeuCauCuuTro_coutnYeuCau",
+  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_618145ba-5e0f-4784-951c-e70fa521b7d8",
+  "id": "pageThongBao_getAdmins",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -16,10 +16,10 @@
           }
         },
         "collection": {
-          "data": "thong_tin_cuu_nans"
+          "data": "admins"
         },
         "command": {
-          "data": "COUNT"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"count\": \"thong_tin_cuu_nans\",\n  \"query\": {},\n}\n",
+            "data": "{\n  \"find\": \"admins\",\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -97,9 +97,8 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "fullyQualifiedName": "coutnYeuCau",
-    "name": "coutnYeuCau",
-    "pageId": "pageYeuCauCuuTro",
+    "name": "getAdmins",
+    "pageId": "pageThongBao",
     "userSetOnLoad": false
   }
 }

@@ -100,7 +100,7 @@
         "key": "formData.aggregate.arrayPipelines.data"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "getHuycutro",
     "pageId": "pageYeuCauCuuTro",
     "userSetOnLoad": false

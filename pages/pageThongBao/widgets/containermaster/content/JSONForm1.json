@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 73,
+  "bottomRow": 47,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -111,15 +111,6 @@
       "key": "schema.__root_schema__.children.is_open.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children._id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children._id.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children._id.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.defaultValue"
     },
     {
@@ -133,27 +124,6 @@
     },
     {
       "key": "schema.__root_schema__.children.is_open.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_admin_tao.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_admin_tao.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_nguon_luc_tao.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_nguon_luc_tao.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.tinh_cap_thiet.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.tinh_cap_thiet.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.tinh_cap_thiet.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.noi_dung.defaultValue"
@@ -190,11 +160,27 @@
     },
     {
       "key": "schema.__root_schema__.children.id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_nguoi_tao.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_nguoi_tao.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_nguoi_tao.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_nguoi_tao.options"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
   "fieldLimitExceeded": false,
   "fixedFooter": true,
   "flexVerticalAlignment": "start",
@@ -210,7 +196,8 @@
   "mobileRightColumn": 59,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 73,
+  "onSubmit": "{{updateThongBaos.run().then(() => {\n  getThongBaos.run();\n  showAlert('Thêm thông báo thành công', 'success');\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});}}",
+  "originalBottomRow": 47,
   "originalTopRow": 5,
   "parentColumnSpace": 18.8896484375,
   "parentId": "dymqkelahi",
@@ -233,28 +220,6 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
-        "_id": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "accessor": "_id",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData._id))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "_id",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": false,
-          "label": "Id",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "_id",
-          "position": 7,
-          "sourceData": "6748905f91ce7b1e5e6f8b1c"
-        },
         "id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "id",
@@ -270,7 +235,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
@@ -285,59 +250,20 @@
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_nguoi_tao))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "id_nguoi_tao",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Id Nguoi Tao",
+          "label": "Người tạo",
           "labelTextSize": "0.875rem",
+          "options": "{{ getAdmins.data.map(item => ({\n\tlabel: item.username,             \n\tvalue: item.id      \n}))}}",
           "originalIdentifier": "id_nguoi_tao",
           "position": 3,
+          "serverSideFiltering": false,
           "sourceData": 1
-        },
-        "is_admin_tao": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "accessor": "is_admin_tao",
-          "alignWidget": "LEFT",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "boolean",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_admin_tao))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Switch",
-          "identifier": "is_admin_tao",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "Is Admin Tao",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "is_admin_tao",
-          "position": 5,
-          "sourceData": true
-        },
-        "is_nguon_luc_tao": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "accessor": "is_nguon_luc_tao",
-          "alignWidget": "LEFT",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "boolean",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_nguon_luc_tao))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Switch",
-          "identifier": "is_nguon_luc_tao",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "Is Nguon Luc Tao",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "is_nguon_luc_tao",
-          "position": 4,
-          "sourceData": false
         },
         "is_open": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -381,6 +307,28 @@
           "position": 1,
           "sourceData": "Một cơn bão lớn đang đến"
         },
+        "ten_nguoi_tao": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "accessor": "ten_nguoi_tao",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ten_nguoi_tao))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ten_nguoi_tao",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Ten Nguoi Tao",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ten_nguoi_tao",
+          "position": 5,
+          "sourceData": "admin9"
+        },
         "tieu_de": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "tieu_de",
@@ -402,28 +350,6 @@
           "originalIdentifier": "tieu_de",
           "position": 0,
           "sourceData": "Cảnh báo bão"
-        },
-        "tinh_cap_thiet": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "accessor": "tinh_cap_thiet",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tinh_cap_thiet))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "tinh_cap_thiet",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Tính cấp thiết",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "tinh_cap_thiet",
-          "position": 2,
-          "sourceData": "Cao"
         }
       },
       "dataType": "object",

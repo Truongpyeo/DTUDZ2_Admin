@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674ffbcd2618fa62f837f29d_a3f7cf68-5753-42ca-a584-f190fad42984",
-  "id": "pageYeuCauCuuTro_coutnYeuCau",
+  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_abd6f070-bf27-4843-87b9-b791cfd2ff00",
+  "id": "pageThongBao_updateThongBaos",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -16,10 +16,10 @@
           }
         },
         "collection": {
-          "data": "thong_tin_cuu_nans"
+          "data": "thong_baos"
         },
         "command": {
-          "data": "COUNT"
+          "data": "UPDATE"
         },
         "count": {
           "query": {
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"count\": \"thong_tin_cuu_nans\",\n  \"query\": {},\n}\n",
+            "data": "{\n  \"update\": \"thong_baos\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table.selectedRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {{JSONForm1.formData}}\n},\n    \"multi\": false,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -78,10 +78,10 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": ""
+            "data": "{\n  \"id\": {{table.selectedRow.id}}\n}\n"
           },
           "update": {
-            "data": ""
+            "data": "{\n\t\"$set\": {{JSONForm1.formData}}\n}"
           }
         }
       },
@@ -95,11 +95,17 @@
       "name": "Resue_alert",
       "pluginId": "mongo-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "fullyQualifiedName": "coutnYeuCau",
-    "name": "coutnYeuCau",
-    "pageId": "pageYeuCauCuuTro",
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.updateMany.query.data"
+      },
+      {
+        "key": "formData.updateMany.update.data"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "updateThongBaos",
+    "pageId": "pageThongBao",
     "userSetOnLoad": false
   }
 }

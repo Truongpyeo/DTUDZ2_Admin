@@ -175,6 +175,9 @@
     },
     {
       "key": "schema.__root_schema__.children.is_open.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.chuc_vu.options"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -232,24 +235,25 @@
       "children": {
         "chuc_vu": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "accessor": "chuc_vu",
+          "accessor": "id_quyen",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.chuc_vu))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_quyen))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "fieldType": "Select",
           "identifier": "chuc_vu",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Chuc Vu",
+          "label": "Chức vụ",
           "labelTextSize": "0.875rem",
+          "options": "{{ getQuyens.data.map(item => ({\n\tlabel: item.ten_chuc_vu,             \n\tvalue: item.id      \n}))}}",
           "originalIdentifier": "chuc_vu",
           "position": 6,
+          "serverSideFiltering": false,
           "sourceData": "Quản lý"
         },
         "email": {

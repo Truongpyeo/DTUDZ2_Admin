@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "shouldTruncate": false,
-  "text": "Bạn muốn điều phối {{Table1.triggeredRow.ten_nhan_luc}} đến hỗ trợ {{table.selectedRow.ho_va_ten}}",
+  "text": "Bạn muốn điều phối {{Table1.triggeredRow.ten_nhan_luc }} đến hỗ trợ {{table.selectedRow.ho_va_ten}}",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "topRow": 6,
