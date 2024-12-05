@@ -1,4 +1,11 @@
 export default {
+	async getCurrentLoction () {
+		var location = await appsmith.geolocation.getCurrentPosition()
+		return {
+		'lat' : location.coords.latitude,
+			'lng' : location.coords.longitude,
+		}
+	},
 	unNhanLucMap: async () => {
 		try {
 			// Lấy dữ liệu từ findNhanCuuTros.run()
