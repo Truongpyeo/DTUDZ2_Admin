@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "5",
-  "bottomRow": 61,
+  "bottomRow": 64,
   "boxShadow": "none",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -51,7 +51,7 @@
   "columnUpdatedAt": 1733362359103,
   "columnWidthMap": {
     "customColumn1": 132,
-    "customColumn4": 60,
+    "customColumn4": 74,
     "email": 234,
     "gender": 110,
     "is_san_san": 118,
@@ -301,7 +301,7 @@
       "width": 150
     },
     "customColumn4": {
-      "alias": "#",
+      "alias": "STT",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
@@ -322,7 +322,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "#",
+      "label": "STT",
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "originalId": "customColumn4",
@@ -754,7 +754,7 @@
     "Display"
   ],
   "textSize": "0.875rem",
-  "topRow": 8,
+  "topRow": 11,
   "totalRecordsCount": "{{coutnYeuCau.data.n}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,

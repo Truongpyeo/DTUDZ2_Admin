@@ -4,7 +4,7 @@
   "borderColor": "transparent",
   "borderRadius": "5px",
   "borderWidth": "",
-  "bottomRow": 7,
+  "bottomRow": 8,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "boxShadowColor": "",
   "children": [
@@ -24,14 +24,14 @@
       "leftColumn": 0,
       "minHeight": 400,
       "parentColumnSpace": 1,
-      "parentId": "njbbomfn19",
+      "parentId": "uznvryzd4y",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 433.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "ycfu2zwq8s",
+      "widgetId": "c80nxrolr8",
       "widgetName": "Canvas1CopyCopy1Copy"
     }
   ],
@@ -62,9 +62,9 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
-  "topRow": 0,
+  "topRow": 1,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "njbbomfn19",
+  "widgetId": "uznvryzd4y",
   "widgetName": "container_header"
 }

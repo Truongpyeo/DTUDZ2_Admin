@@ -31,6 +31,7 @@
     }
   },
   "columnOrder": [
+    "customColumn2",
     "ho_va_ten_nguoi_dung",
     "noi_dung",
     "is_tro_cap",
@@ -51,9 +52,10 @@
     "email_nhan_luc",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1733287961741,
+  "columnUpdatedAt": 1733365190293,
   "columnWidthMap": {
     "customColumn1": 115,
+    "customColumn2": 76,
     "dia_chi_nguoi_dung": 203,
     "email_nguoi_dung": 193,
     "gender": 110,
@@ -155,6 +157,9 @@
     },
     {
       "key": "primaryColumns.trang_thai.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn2.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -288,6 +293,39 @@
       "originalId": "customColumn1",
       "sticky": "",
       "textColor": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow.is_tro_cap === false? \"#ef4444\":\"#14532d\"))}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn2": {
+      "alias": "STT",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "text",
+      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn2",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "STT",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn2",
+      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

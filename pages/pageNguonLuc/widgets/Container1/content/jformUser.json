@@ -215,7 +215,7 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onSubmit": "{{updateNguonLuc.run().then(() => {\n  getNguocLucs.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Cập nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 50,
+  "originalBottomRow": 57,
   "originalTopRow": 4,
   "parentColumnSpace": 19.1484375,
   "parentId": "np3b8vrgfd",

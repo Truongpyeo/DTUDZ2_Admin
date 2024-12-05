@@ -208,6 +208,15 @@
     },
     {
       "key": "schema.__root_schema__.children.is_active.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.STT.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.STT.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.STT.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -263,6 +272,28 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "STT": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
+          "accessor": "STT",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.STT))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "STT",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "STT",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "STT",
+          "position": 11,
+          "sourceData": 0
+        },
         "_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
           "accessor": "_id",

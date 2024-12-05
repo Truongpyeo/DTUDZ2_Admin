@@ -106,7 +106,7 @@
         "key": "formData.aggregate.limit.data"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "getNhanCuuTros",
     "pageId": "pageQuanLyCuuTro",
     "userSetOnLoad": false

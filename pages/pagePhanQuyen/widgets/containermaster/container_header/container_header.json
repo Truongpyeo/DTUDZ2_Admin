@@ -10,7 +10,7 @@
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 80,
+      "bottomRow": 70,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -24,14 +24,14 @@
       "leftColumn": 0,
       "minHeight": 400,
       "parentColumnSpace": 1,
-      "parentId": "vtj5h9i60s",
+      "parentId": "xfq1qmg6rp",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 433.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "zjjs75ozvb",
+      "widgetId": "hba7us8x2x",
       "widgetName": "Canvas1CopyCopy1Copy"
     }
   ],
@@ -62,9 +62,9 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
-  "topRow": 0,
+  "topRow": 1,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "vtj5h9i60s",
+  "widgetId": "xfq1qmg6rp",
   "widgetName": "container_header"
 }

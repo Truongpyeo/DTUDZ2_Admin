@@ -16,7 +16,7 @@
   ],
   "hideCard": false,
   "iconAlign": "left",
-  "iconName": "walk",
+  "iconName": "timeline-area-chart",
   "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
   "isDefaultClickDisabled": true,
   "isDeprecated": false,
@@ -25,7 +25,7 @@
   "isVisible": true,
   "key": "ea7apjwric",
   "leftColumn": 1,
-  "onClick": "{{navigateTo('pagePhanPhoiNguonLuc', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('pageThongKe', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
   "parentId": "k8hp7holoi",
   "parentRowSpace": 10,
@@ -38,10 +38,10 @@
     "click",
     "submit"
   ],
-  "text": "Phân Phối Nguồn Lực",
+  "text": "Thống Kê",
   "topRow": 45,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "007ij7ah0t",
+  "widgetId": "zcz7xd5qi6",
   "widgetName": "link_nhan_lucCopyCopyCopy"
 }
