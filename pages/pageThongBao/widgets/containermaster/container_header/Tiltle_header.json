@@ -12,7 +12,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "fontFamily": "Poppins",
+  "fontFamily": "Inter",
   "fontSize": "1.7rem",
   "fontStyle": "BOLD",
   "hideCard": false,
@@ -30,7 +30,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 63,
-  "text": "QUAN LY THONG BAO",
+  "text": "QUẢN LÝ THÔNG BÁO VÀ CẢNH BÁO",
   "textAlign": "CENTER",
   "textColor": "#FFFFFF",
   "topRow": 1,
