@@ -1,16 +1,13 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 49,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#5e6c9e",
   "buttonStyle": "PRIMARY",
   "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
@@ -35,7 +32,7 @@
   "onClick": "{{closeModal(modal_adduser.name);}}",
   "originalBottomRow": 52,
   "originalTopRow": 48,
-  "parentId": "8mixqh71xc",
+  "parentId": "z6cn51tcjn",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -43,9 +40,9 @@
   "responsiveBehavior": "hug",
   "rightColumn": 44,
   "text": "ĐÓNG",
-  "topRow": 41,
+  "topRow": 45,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "yni91t02wm",
-  "widgetName": "Button4"
+  "widgetId": "icmfgczohd",
+  "widgetName": "Button4Copy"
 }

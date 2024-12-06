@@ -33,6 +33,8 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(modal_doipass.name);}}",
+  "originalBottomRow": 43,
+  "originalTopRow": 39,
   "parentId": "e2lc0085v0",
   "placement": "CENTER",
   "recaptchaType": "V3",

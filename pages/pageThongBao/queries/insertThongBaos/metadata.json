@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_041f62bf-ac0c-4deb-82ef-3a8d72ad9128",
-  "id": "pageVungNguyHiem_Update_vung_nguy_hiem1",
+  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_aebee150-03eb-4ddf-a095-9f2b2d4e6ea0",
+  "id": "pageThongBao_insertThongBaos",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -16,10 +16,10 @@
           }
         },
         "collection": {
-          "data": "vung_nguy_hiem"
+          "data": "thong_baos"
         },
         "command": {
-          "data": "UPDATE"
+          "data": "INSERT"
         },
         "count": {
           "query": {
@@ -61,12 +61,12 @@
         },
         "insert": {
           "documents": {
-            "data": ""
+            "data": "{\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"tieu_de\": \"{{inp_teude.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"id_nguoi_tao\": {{appsmith.store.id_admin}},                                \n\t\"is_admin_tao\": true,                                 \n\t\"is_nguon_luc_tao\": false,                                 \n\t\"is_open\": true,                                 \n}\n"
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"update\": \"vung_nguy_hiem\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table.selectedRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {{JSONForm1.formData}}\n},\n    \"multi\": false,\n  }]\n}\n",
+            "data": "{\n  \"insert\": \"thong_baos\",\n  \"documents\": {\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"tieu_de\": \"{{inp_teude.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"id_nguoi_tao\": {{appsmith.store.id_admin}},                                \n\t\"is_admin_tao\": true,                                 \n\t\"is_nguon_luc_tao\": false,                                 \n\t\"is_open\": true,                                 \n}\n\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -78,10 +78,10 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{\n  \"id\": {{table.selectedRow.id}}\n}\n"
+            "data": ""
           },
           "update": {
-            "data": "{\n\t\"$set\": {{JSONForm1.formData}}\n}"
+            "data": ""
           }
         }
       },
@@ -97,15 +97,12 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.updateMany.query.data"
-      },
-      {
-        "key": "formData.updateMany.update.data"
+        "key": "formData.insert.documents.data"
       }
     ],
     "executeOnLoad": false,
-    "name": "Update_vung_nguy_hiem1",
-    "pageId": "pageVungNguyHiem",
+    "name": "insertThongBaos",
+    "pageId": "pageThongBao",
     "userSetOnLoad": false
   }
 }

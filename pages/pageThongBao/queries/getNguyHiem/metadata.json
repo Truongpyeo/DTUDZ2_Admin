@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_e1b6b4a6-6fa2-4708-a3cd-9e2a17c385b8",
-  "id": "pageVungNguyHiem_Total_record_vung_nguy_hiem1",
+  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_fd35c6d4-dd0d-4176-bc1c-69c341e63d92",
+  "id": "pageThongBao_getNguyHiem",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -8,6 +8,9 @@
       "encodeParamsToggle": true,
       "formData": {
         "aggregate": {
+          "arrayPipelines": {
+            "data": ""
+          },
           "limit": {
             "data": "10"
           }
@@ -16,7 +19,7 @@
           "data": "vung_nguy_hiem"
         },
         "command": {
-          "data": "COUNT"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -26,11 +29,44 @@
         "delete": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          }
+        },
+        "distinct": {
+          "key": {
+            "data": ""
+          },
+          "query": {
+            "data": ""
+          }
+        },
+        "find": {
+          "limit": {
+            "data": ""
+          },
+          "projection": {
+            "data": ""
+          },
+          "query": {
+            "data": ""
+          },
+          "skip": {
+            "data": ""
+          },
+          "sort": {
+            "data": ""
+          }
+        },
+        "insert": {
+          "documents": {
+            "data": ""
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"count\": \"vung_nguy_hiem\",\n  \"query\": {},\n}\n",
+            "data": "{\n  \"find\": \"vung_nguy_hiem\",\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -40,6 +76,12 @@
         "updateMany": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          },
+          "update": {
+            "data": ""
           }
         }
       },
@@ -53,14 +95,10 @@
       "name": "Resue_alert",
       "pluginId": "mongo-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.count.query.data"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "Total_record_vung_nguy_hiem1",
-    "pageId": "pageVungNguyHiem",
+    "name": "getNguyHiem",
+    "pageId": "pageThongBao",
     "userSetOnLoad": false
   }
 }

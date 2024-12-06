@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
-  "bottomRow": 73,
+  "borderRadius": "0.375rem",
+  "borderWidth": "5",
+  "bottomRow": 49,
   "boxShadow": "none",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -59,9 +59,6 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "tableData"

@@ -53,7 +53,7 @@
             "data": ""
           },
           "skip": {
-            "data": "{{table.pageOffset }}"
+            "data": "{{(table.pageNo - 1) * table.pageSize}}"
           },
           "sort": {
             "data": ""
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"find\": \"vung_nguy_hiem\",\n  \"skip\": {{table.pageOffset }},\n  \"limit\": {{table.pageSize}},\n  \"batchSize\": {{table.pageSize}}\n}\n",
+            "data": "{\n  \"find\": \"vung_nguy_hiem\",\n  \"skip\": {{(table.pageNo - 1) * table.pageSize}},\n  \"limit\": {{table.pageSize}},\n  \"batchSize\": {{table.pageSize}}\n}\n",
             "status": "SUCCESS"
           }
         },

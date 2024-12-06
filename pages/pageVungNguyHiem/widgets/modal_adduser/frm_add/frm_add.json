@@ -4,11 +4,11 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 38,
+  "bottomRow": 44,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
-      "bottomRow": 330,
+      "bottomRow": 400,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
@@ -28,7 +28,7 @@
       "mobileRightColumn": 65.75,
       "mobileTopRow": 0,
       "parentColumnSpace": 1,
-      "parentId": "6v915umi5a",
+      "parentId": "8boqxehoop",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -36,7 +36,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "yp3kmca6g9",
+      "widgetId": "7k5okaozh8",
       "widgetName": "Canvas2Copy1"
     }
   ],
@@ -69,7 +69,7 @@
   "originalBottomRow": 48,
   "originalTopRow": 6,
   "parentColumnSpace": 8.21875,
-  "parentId": "8mixqh71xc",
+  "parentId": "k9ozh8kinq",
   "parentRowSpace": 10,
   "positioning": "fixed",
   "renderMode": "CANVAS",
@@ -78,9 +78,9 @@
   "searchTags": [
     "group"
   ],
-  "shouldScrollContents": true,
-  "topRow": 5,
+  "shouldScrollContents": false,
+  "topRow": 4,
   "type": "FORM_WIDGET",
-  "widgetId": "6v915umi5a",
+  "widgetId": "8boqxehoop",
   "widgetName": "frm_add"
 }

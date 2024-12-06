@@ -23,7 +23,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "vp0cd6uy7s",
+  "key": "52uviuj31u",
   "leftColumn": 58,
   "minWidth": 50,
   "mobileBottomRow": 4,
@@ -31,14 +31,14 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(modal_adduser.name);}}",
-  "parentId": "8mixqh71xc",
+  "onClick": "{{closeModal(modal_deluser.name);}}",
+  "parentId": "yyxbkn59ff",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "4f96v6r4s4",
-  "widgetName": "IconButton3"
+  "widgetId": "ad9asi3w7z",
+  "widgetName": "IconButton2"
 }
