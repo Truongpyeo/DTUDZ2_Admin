@@ -14,7 +14,7 @@ export default {
 			id:uuid.hexNoDelim,
 		};
 		await Insert_vung_nguy_hiem1.run(obj);
-		await Find_vung_nguy_hiem1..run();
+		await Find_vung_nguy_hiem1.run();
 		showAlert("Vùng Nguy hiểm báo đã được tạo thành công!", "success");
 		closeModal(modal_adduser.name);
 	}
