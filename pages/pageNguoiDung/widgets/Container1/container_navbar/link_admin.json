@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('PageAdmin', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "9qiccsjpno",
+  "parentId": "ii7tdddf8c",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 10,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "qvew8ncvt4",
+  "widgetId": "o958f7ayx5",
   "widgetName": "link_admin"
 }

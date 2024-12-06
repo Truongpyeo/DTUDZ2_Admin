@@ -49,6 +49,7 @@
     "gender": 110,
     "id_loai_nguon_luc": 97
   },
+  "compactMode": "SHORT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [

@@ -25,7 +25,7 @@
   "isVisible": true,
   "key": "ea7apjwric",
   "leftColumn": 1,
-  "onClick": "{{navigateTo('pageThongKe', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('pageThongKeTinhNguyenVIen', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
   "parentId": "in5xq6n2da",
   "parentRowSpace": 10,

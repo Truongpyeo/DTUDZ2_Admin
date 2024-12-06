@@ -61,12 +61,12 @@
         },
         "insert": {
           "documents": {
-            "data": "{\n\t\"id\":\"{{this.params.id}}\",\n\t\"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\",\n\t\"id_nhan_luc\": \"{{Table1.triggeredRow.id}}\",\n\t\"trang_thai\": \"Đang chờ xử lý\",\n\t\"so_nguoi\": 5\n}"
+            "data": "{\n\t\"id\":\"{{this.params.id}}\",\n\t\"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\",\n\t\"id_nhan_luc\": \"{{Table1.triggeredRow.id}}\",\n\t\"trang_thai\": \"Đã Tiếp Nhận\",\n\t\"so_nguoi\": 5\n}"
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"insert\": \"nhan_cuu_tros\",\n  \"documents\": {\n\t\"id\":\"{{this.params.id}}\",\n\t\"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\",\n\t\"id_nhan_luc\": \"{{Table1.triggeredRow.id}}\",\n\t\"trang_thai\": \"Đang chờ xử lý\",\n\t\"so_nguoi\": 5\n}\n}\n",
+            "data": "{\n  \"insert\": \"nhan_cuu_tros\",\n  \"documents\": {\n\t\"id\":\"{{this.params.id}}\",\n\t\"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\",\n\t\"id_nhan_luc\": \"{{Table1.triggeredRow.id}}\",\n\t\"trang_thai\": \"Đã Tiếp Nhận\",\n\t\"so_nguoi\": 5\n}\n}\n",
             "status": "SUCCESS"
           }
         },

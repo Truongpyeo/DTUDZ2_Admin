@@ -4,13 +4,13 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 99,
+  "bottomRow": 105,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "children": [
     {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 990,
+      "bottomRow": 1040,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
@@ -32,14 +32,14 @@
       "leftColumn": 0,
       "minHeight": 980,
       "parentColumnSpace": 1,
-      "parentId": "7gs8u3hbgd",
+      "parentId": "ljr6vh1w1s",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 475.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "539zp4eqah",
+      "widgetId": "6qxqlyewjm",
       "widgetName": "Canvas1Copy2"
     }
   ],
@@ -70,9 +70,9 @@
     "group"
   ],
   "shouldScrollContents": true,
-  "topRow": 0,
+  "topRow": 1,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "7gs8u3hbgd",
+  "widgetId": "ljr6vh1w1s",
   "widgetName": "container_navbar"
 }

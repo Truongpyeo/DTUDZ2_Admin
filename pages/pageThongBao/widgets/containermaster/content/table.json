@@ -32,14 +32,14 @@
   },
   "columnOrder": [
     "tieu_de",
-    "noi_dung",
     "ten_nguoi_tao",
+    "noi_dung",
     "id_nguoi_tao",
     "is_open",
     "customColumn1",
     "id"
   ],
-  "columnUpdatedAt": 1733361672727,
+  "columnUpdatedAt": 1733418021221,
   "columnWidthMap": {
     "customColumn1": 95,
     "email": 208,
