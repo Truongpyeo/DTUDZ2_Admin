@@ -1,18 +1,9 @@
-# DTUDZ2 Admin Dashboard![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/appsmith_logo_primary.png)
-
-This app is built using Appsmith. Turn any datasource into an internal app in minutes. Appsmith lets you drag-and-drop components to build dashboards, write logic with JavaScript objects and connect to any API, database or GraphQL source.
-
-![](https://raw.githubusercontent.com/appsmithorg/appsmith/release/static/images/integrations.png)
-
-### [Github](https://github.com/appsmithorg/appsmith) • [Docs](https://docs.appsmith.com/?utm_source=github&utm_medium=social&utm_content=appsmith_docs&utm_campaign=null&utm_term=appsmith_docs) • [Community](https://community.appsmith.com/) • [Tutorials](https://github.com/appsmithorg/appsmith/tree/update/readme#tutorials) • [Youtube](https://www.youtube.com/appsmith) • [Discord](https://discord.gg/rBTTVJp)
-
+##DTUDZ2 NGƯỜI DÙNG![](https://github.com/Truongpyeo/DTURelifeLink/raw/master/assets/images/Reliefbanner.png)
+## 📝 Giới thiệu
+DTUDZ2 NHÂN LỰC là một ứng dụng quản trị được xây dựng bằng Appsmith, được thiết kế hỗ trợ, thực hiện cứu hộ cứu nạn trong các tình huống khẩn cấp, và hỗ trợ các hoạt động cứu trợ hiệu quả trong ứng dụng.
 ##### You can visit the application using the below link
 
-###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](https://dz1.dzfullstack.com/app/dtudz2-admin/master-admin-6750f0d8f0b1ed2b4a0eb5d6?branch=master&embed=true&environment=production)
-
-## 📝 Giới thiệu
-DTUDZ2 Admin Dashboard là một ứng dụng quản trị được xây dựng bằng Appsmith, được thiết kế để quản lý và điều hành các hoạt động của hệ thống ReliefLink.
-
+###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](https://dz1.dzfullstack.com/app/dtudz2-admin/master-admin-6750f0d8f0b1ed2b4a0eb5d6?branch=master)
 ## ⚡ Tính năng chính
 
 1. MASTER ADMIN
@@ -118,7 +109,14 @@ Xem [CHANGELOG](https://github.com/Truongpyeo/DTURelifeLink/blob/master/CHANGELO
 Xem [CODE_OF_CONDUCT](https://github.com/Truongpyeo/DTURelifeLink/blob/master/CODE_OF_CONDUCT.md) để biết các quy tắc và hành vi được chấp nhận.
 
 ## Báo cáo lỗi & Góp ý
-- Issues: [GitHub Issues](https://github.com/Truongpyeo/DTURelifeLink/issues)
+- Issues: [GitHub Issues](https://github.com/Truongpyeo/DTUDZ2_NguoiDung/issues)
+- Xem [hướng dẫn đóng góp](CONTRIBUTING.md) để biết thêm chi tiết
 - Security: Đối với các vấn đề bảo mật nhạy cảm, vui lòng liên hệ trực tiếp qua email: <u>thanhtruong23111999@gmail.com</u>
+## Liên hệ & Hỗ trợ
 
-```
+### Thảo luận & Hỗ trợ
+- Email hỗ trợ: thanhtruong23111999@gmail.com
+
+## 📄 License
+
+Dự án này được phân phối dưới giấy phép MIT. Xem file [LICENSE](LICENSE) để biết thêm chi tiết.
