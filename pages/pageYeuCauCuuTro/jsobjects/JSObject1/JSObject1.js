@@ -1,8 +1,15 @@
 export default {
+	checklogin:  async () => {
+		const check = appsmith.store.id_admin;
+		if(check === null){
+			navigateTo("pageDangNhap");
+			showAlert("Bạn chưa đăng nhập","error");
+		}
+	},
 	async getCurrentLoction () {
 		var location = await appsmith.geolocation.getCurrentPosition()
 		return {
-		'lat' : location.coords.latitude,
+			'lat' : location.coords.latitude,
 			'lng' : location.coords.longitude,
 		}
 	},

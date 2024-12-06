@@ -37,8 +37,14 @@ export default {
 
 
 	},
-
-	checkLogin: async () => {
+	checklogin:  async () => {
+		const check = appsmith.store.id_admin;
+		if(check){
+			navigateTo("MASTER_ADMIN");
+			showAlert("Bạn đã đăng nhập","error");
+		}
+	},
+	checkLogin1: async () => {
 		const token = appsmith.store.tokenAdmin;
 		// try {
 		// 

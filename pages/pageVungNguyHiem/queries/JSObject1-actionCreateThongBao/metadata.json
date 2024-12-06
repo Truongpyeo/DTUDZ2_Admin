@@ -26,6 +26,6 @@
     "fullyQualifiedName": "JSObject1.actionCreateThongBao",
     "name": "actionCreateThongBao",
     "pageId": "pageVungNguyHiem",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

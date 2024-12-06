@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674833e82451335b46a6795b_fff288c2-76b8-4ba2-aa94-4cc44eb145e9",
-  "id": "pageDangNhap_objLogin.actionLogin",
+  "gitSyncId": "674833e82451335b46a6795b_75e79e08-94ff-426b-a7ff-14eb6ac2333f",
+  "id": "pageDangNhap_objLogin.checkLogin1",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "fullyQualifiedName": "objLogin.actionLogin",
-    "name": "actionLogin",
+    "executeOnLoad": false,
+    "fullyQualifiedName": "objLogin.checkLogin1",
+    "name": "checkLogin1",
     "pageId": "pageDangNhap",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

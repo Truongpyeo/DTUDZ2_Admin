@@ -225,7 +225,7 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onSubmit": "{{updateNhanLucs.run().then(() => {\n  getNhanLucs.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('cập nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 56,
+  "originalBottomRow": 55,
   "originalTopRow": 4,
   "parentColumnSpace": 19.1484375,
   "parentId": "7q0i5n0p2w",
