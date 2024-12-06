@@ -8,7 +8,7 @@ This app is built using Appsmith. Turn any datasource into an internal app in mi
 
 ##### You can visit the application using the below link
 
-###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](http://localhost:5555/applications/674fe6b0044cc1063c879238/pages/674fe6b0044cc1063c879251) [![](https://assets.appsmith.com/git-sync/Buttons2.svg)](http://localhost:5555/applications/674fe6b0044cc1063c879238/pages/674fe6b0044cc1063c879251/edit)
+###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ]([http://localhost:5555/applications/674fe6b0044cc1063c879238/pages/674fe6b0044cc1063c879251](https://dz1.dzfullstack.com/app/dtudz2-admin/master-admin-6750f0d8f0b1ed2b4a0eb5d6?branch=master&embed=true&environment=production))
 
 
 ## 📝 Giới thiệu
