@@ -29,7 +29,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{delThongBao.run().then(() => {\n  getThongBaos.run();\n  showAlert('Xoá thành công', '');\n  closeModal(modal_deluser.name);\n}).catch(() => {\n  showAlert('Huỷ', '');\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "6gm2ak17i6",

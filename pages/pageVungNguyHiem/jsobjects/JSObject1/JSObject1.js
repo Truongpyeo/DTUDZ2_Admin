@@ -6,10 +6,9 @@ export default {
 		const obj = {
 			id:uuid.hexNoDelim,
 		};
-		await insertThongBaos.run(obj);
-		await getNguyHiem.run();
-		showAlert("Thông báo đã được tạo thành công!", "success");
-		await getNguyHiem.run();
+		await Insert_vung_nguy_hiem1.run(obj);
+		await Find_vung_nguy_hiem1..run();
+		showAlert("Vùng Nguy hiểm báo đã được tạo thành công!", "success");
 		closeModal(modal_adduser.name);
 
 	},

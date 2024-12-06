@@ -29,7 +29,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "",
+  "onClick": "{{JSObject1.actionCreateThongBao();}}",
   "originalBottomRow": 52,
   "originalTopRow": 48,
   "parentId": "z6cn51tcjn",

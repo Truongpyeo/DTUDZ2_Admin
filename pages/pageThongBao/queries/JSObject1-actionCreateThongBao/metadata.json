@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_59a0cc4e-1dff-4fc8-a3b0-4605375499d4",
-  "id": "pageThongBao_JSObject1.actionCreateAdmin",
+  "id": "pageThongBao_JSObject1.actionCreateThongBao",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.actionCreateAdmin",
-    "name": "actionCreateAdmin",
+    "fullyQualifiedName": "JSObject1.actionCreateThongBao",
+    "name": "actionCreateThongBao",
     "pageId": "pageThongBao",
     "userSetOnLoad": false
   }

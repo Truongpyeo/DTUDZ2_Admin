@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 47,
+  "bottomRow": 62,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -123,9 +123,6 @@
       "key": "schema.__root_schema__.children.is_open.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.is_open.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.noi_dung.defaultValue"
     },
     {
@@ -162,6 +159,18 @@
       "key": "schema.__root_schema__.children.id.borderRadius"
     },
     {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.defaultValue"
+    },
+    {
       "key": "schema.__root_schema__.children.ten_nguoi_tao.defaultValue"
     },
     {
@@ -171,11 +180,24 @@
       "key": "schema.__root_schema__.children.ten_nguoi_tao.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.id_nguoi_tao.options"
+      "key": "schema.__root_schema__.children.is_open.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "schema.__root_schema__.children.is_open.defaultValue"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -187,7 +209,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "zov59r3f27",
-  "leftColumn": 35,
+  "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -196,8 +218,8 @@
   "mobileRightColumn": 59,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onSubmit": "{{updateThongBaos.run().then(() => {\n  getThongBaos.run();\n  showAlert('Thêm thông báo thành công', 'success');\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});}}",
-  "originalBottomRow": 47,
+  "onSubmit": "{{updateThongBaos.run().then(() => {\n  getThongBaos.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});}}",
+  "originalBottomRow": 62,
   "originalTopRow": 5,
   "parentColumnSpace": 18.8896484375,
   "parentId": "dymqkelahi",
@@ -220,6 +242,29 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "customField1": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "accessor": "id_vung_nguy_hiem",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_vung_nguy_hiem))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "customField1",
+          "isCustomField": true,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Loại Nguy Hiểm",
+          "labelTextSize": "0.875rem",
+          "options": "{{ getNguyHiem.data.map(item => ({\n\tlabel: item.loai_nguy_hiem,              \n\tvalue: item.id      \n}))}}",
+          "originalIdentifier": "customField1",
+          "position": 9,
+          "serverSideFiltering": false,
+          "sourceData": ""
+        },
         "id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "id",
@@ -239,7 +284,7 @@
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
-          "position": 8,
+          "position": 5,
           "sourceData": 1
         },
         "id_nguoi_tao": {
@@ -250,20 +295,19 @@
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_nguoi_tao))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Select",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
           "identifier": "id_nguoi_tao",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
-          "isVisible": true,
-          "label": "Người tạo",
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Id Nguoi Tao",
           "labelTextSize": "0.875rem",
-          "options": "{{ getAdmins.data.map(item => ({\n\tlabel: item.username,             \n\tvalue: item.id      \n}))}}",
           "originalIdentifier": "id_nguoi_tao",
           "position": 3,
-          "serverSideFiltering": false,
-          "sourceData": 1
+          "sourceData": 12
         },
         "is_open": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -307,6 +351,28 @@
           "position": 1,
           "sourceData": "Một cơn bão lớn đang đến"
         },
+        "ten_loai_nguy_hiem": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "accessor": "ten_loai_nguy_hiem",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ten_loai_nguy_hiem))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ten_loai_nguy_hiem",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Ten Loai Nguy Hiem",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ten_loai_nguy_hiem",
+          "position": 7,
+          "sourceData": "Bão"
+        },
         "ten_nguoi_tao": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "ten_nguoi_tao",
@@ -322,12 +388,12 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Ten Nguoi Tao",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ten_nguoi_tao",
-          "position": 5,
-          "sourceData": "admin9"
+          "position": 6,
+          "sourceData": "Việt võ"
         },
         "tieu_de": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_8492b08b-f9fc-476a-a4f2-4ec2f6e0e956",
-  "id": "pageVungNguyHiem_Insert_vung_nguy_hiem1",
+  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_a6cc4473-6645-41fc-853d-01fe2e4d491f",
+  "id": "pageThongBao_delThongBao",
   "pluginId": "mongo-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -16,10 +16,10 @@
           }
         },
         "collection": {
-          "data": "vung_nguy_hiem"
+          "data": "thong_baos"
         },
         "command": {
-          "data": "INSERT"
+          "data": "DELETE"
         },
         "count": {
           "query": {
@@ -31,7 +31,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": ""
+            "data": "{\n\tid : {{table.triggeredRow.id}}\n}"
           }
         },
         "distinct": {
@@ -61,12 +61,12 @@
         },
         "insert": {
           "documents": {
-            "data": "{\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"ten_vung\": \"{{inp_tenvung.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"muc_do\": \"{{input_mucdo.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"is_active\": true,                                 \n\t\"toa_do\": {\n\t\"lat\" : \"15.115466\",\n\t\"lng\" : \"108.804808\"\n}\n}\n"
+            "data": ""
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"insert\": \"vung_nguy_hiem\",\n  \"documents\": {\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"ten_vung\": \"{{inp_tenvung.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"muc_do\": \"{{input_mucdo.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"is_active\": true,                                 \n\t\"toa_do\": {\n\t\"lat\" : \"15.115466\",\n\t\"lng\" : \"108.804808\"\n}\n}\n\n}\n",
+            "data": "{\n  \"delete\": \"thong_baos\",\n  \"deletes\": [{\n    \"q\": {\n\tid : {{table.triggeredRow.id}}\n},\n    \"limit\": 1,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -97,12 +97,12 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "formData.insert.documents.data"
+        "key": "formData.delete.query.data"
       }
     ],
     "executeOnLoad": false,
-    "name": "Insert_vung_nguy_hiem1",
-    "pageId": "pageVungNguyHiem",
+    "name": "delThongBao",
+    "pageId": "pageThongBao",
     "userSetOnLoad": false
   }
 }
