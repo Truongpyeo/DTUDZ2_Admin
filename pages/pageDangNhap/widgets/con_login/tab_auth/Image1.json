@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultImage": "https://dzfullstack.com/assets/images/logo-1.png",
+  "defaultImage": "https://dz1.dzfullstack.com/api/v1/assets/6750fbd24600587dc36808d3",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"

@@ -12,7 +12,7 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "Open Sans",
   "fontSize": "1.875rem",
-  "fontStyle": "",
+  "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
   "isDeprecated": false,

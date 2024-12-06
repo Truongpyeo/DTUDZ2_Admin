@@ -26,6 +26,6 @@
     "fullyQualifiedName": "objLogin.checkLogin1",
     "name": "checkLogin1",
     "pageId": "pageDangNhap",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

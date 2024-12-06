@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "objLogin.checklogin",
     "name": "checklogin",
     "pageId": "pageDangNhap",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
