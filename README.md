@@ -8,8 +8,7 @@ This app is built using Appsmith. Turn any datasource into an internal app in mi
 
 ##### You can visit the application using the below link
 
-###### [![Admin Dashboard]([https://assets.appsmith.com/git-sync/Buttons.svg](https://dz1.dzfullstack.com/app/dtudz2-admin/master-admin-6750f0d8f0b1ed2b4a0eb5d6?branch=master&embed=true&environment=production)) ]([http://localhost:5555/applications/674fe6b0044cc1063c879238/pages/674fe6b0044cc1063c879251](https://dz1.dzfullstack.com/app/dtudz2-admin/master-admin-6750f0d8f0b1ed2b4a0eb5d6?branch=master&embed=true&environment=production]))
-
+###### [![](https://assets.appsmith.com/git-sync/Buttons.svg) ](https://dz1.dzfullstack.com/app/dtudz2-admin/master-admin-6750f0d8f0b1ed2b4a0eb5d6?branch=master&embed=true&environment=production)
 
 ## 📝 Giới thiệu
 DTUDZ2 Admin Dashboard là một ứng dụng quản trị được xây dựng bằng Appsmith, được thiết kế để quản lý và điều hành các hoạt động của hệ thống ReliefLink.
