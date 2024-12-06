@@ -1,4 +1,4 @@
-##DTUDZ2 NGƯỜI DÙNG![](https://github.com/Truongpyeo/DTURelifeLink/raw/master/assets/images/Reliefbanner.png)
+##DTUDZ2 ADMIN![](https://github.com/Truongpyeo/DTURelifeLink/raw/master/assets/images/Reliefbanner.png)
 ## 📝 Giới thiệu
 DTUDZ2 NHÂN LỰC là một ứng dụng quản trị được xây dựng bằng Appsmith, được thiết kế hỗ trợ, thực hiện cứu hộ cứu nạn trong các tình huống khẩn cấp, và hỗ trợ các hoạt động cứu trợ hiệu quả trong ứng dụng.
 ##### You can visit the application using the below link
@@ -109,7 +109,7 @@ Xem [CHANGELOG](https://github.com/Truongpyeo/DTURelifeLink/blob/master/CHANGELO
 Xem [CODE_OF_CONDUCT](https://github.com/Truongpyeo/DTURelifeLink/blob/master/CODE_OF_CONDUCT.md) để biết các quy tắc và hành vi được chấp nhận.
 
 ## Báo cáo lỗi & Góp ý
-- Issues: [GitHub Issues](https://github.com/Truongpyeo/DTUDZ2_NguoiDung/issues)
+- Issues: [GitHub Issues](https://github.com/Truongpyeo/DTUDZ2_Admin/issues)
 - Xem [hướng dẫn đóng góp](CONTRIBUTING.md) để biết thêm chi tiết
 - Security: Đối với các vấn đề bảo mật nhạy cảm, vui lòng liên hệ trực tiếp qua email: <u>thanhtruong23111999@gmail.com</u>
 ## Liên hệ & Hỗ trợ
