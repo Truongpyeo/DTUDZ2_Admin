@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 24,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -37,7 +37,7 @@
   "text": "ĐĂNG NHẬP ADMIN",
   "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 15,
+  "topRow": 19,
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,

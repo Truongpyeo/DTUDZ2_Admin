@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "674ffbcd2618fa62f837f29d_9e3bc8c0-598c-4341-83b9-9bf3df4aa6cb",
-  "id": "pageNguonLuc_JSObject1.doiPassword",
+  "gitSyncId": "6750f0cdf0b1ed2b4a0eb5b4_dd2ad125-51fc-464b-851d-43da65f6ddbd",
+  "id": "pageNguonLuc_JSObject1.getCurrentLoction",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,9 +22,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.doiPassword",
-    "name": "doiPassword",
+    "executeOnLoad": true,
+    "fullyQualifiedName": "JSObject1.getCurrentLoction",
+    "name": "getCurrentLoction",
     "pageId": "pageNguonLuc",
     "userSetOnLoad": false
   }

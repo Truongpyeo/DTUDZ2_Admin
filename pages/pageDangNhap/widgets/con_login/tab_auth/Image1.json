@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 13,
   "boxShadow": "none",
-  "defaultImage": "https://dz1.dzfullstack.com/api/v1/assets/6750fbd24600587dc36808d3",
+  "defaultImage": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/469205556_1543211402997587_5591758809556930581_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHyriwcZQbggKO1DfJGKq7yX0SHma5YSstfRIeZrlhKywnFeiKqeeRd0X_H95BcAuUkqkX2dwehukxNC54nOKmv&_nc_ohc=f2lvPW16VMIQ7kNvgFTevgZ&_nc_zt=23&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=Ab_W9uAtuKgtGC5YOGD6igA&oh=00_AYDfsSxh88bc2SPnbsmGs6QzrHaxjBDLzxVrgCeJk1iuIg&oe=6759B794",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -18,7 +18,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "uar2g784qd",
-  "leftColumn": 12,
+  "leftColumn": 11,
   "maxZoomLevel": 1,
   "mobileBottomRow": 15,
   "mobileLeftColumn": 12,
@@ -30,8 +30,8 @@
   "parentId": "pr49dtlg5c",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 46,
-  "topRow": 3,
+  "rightColumn": 55,
+  "topRow": 1,
   "type": "IMAGE_WIDGET",
   "version": 1,
   "widgetId": "7b4tq5drzj",

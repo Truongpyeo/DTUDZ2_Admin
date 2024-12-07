@@ -4,11 +4,11 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 44,
+  "bottomRow": 40,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
-      "bottomRow": 400,
+      "bottomRow": 360,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
@@ -78,7 +78,7 @@
   "searchTags": [
     "group"
   ],
-  "shouldScrollContents": false,
+  "shouldScrollContents": true,
   "topRow": 4,
   "type": "FORM_WIDGET",
   "widgetId": "8boqxehoop",

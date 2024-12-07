@@ -37,7 +37,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 6,
+  "leftColumn": 1,
   "maxChars": "255",
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -48,7 +48,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 21,
+  "rightColumn": 16,
   "searchTags": [
     "form",
     "text input",

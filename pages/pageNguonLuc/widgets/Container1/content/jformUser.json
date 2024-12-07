@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 57,
+  "bottomRow": 50,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -215,7 +215,7 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onSubmit": "{{updateNguonLuc.run().then(() => {\n  getNguocLucs.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Cập nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 57,
+  "originalBottomRow": 50,
   "originalTopRow": 4,
   "parentColumnSpace": 19.1484375,
   "parentId": "np3b8vrgfd",
@@ -253,7 +253,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "STT",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "STT",
