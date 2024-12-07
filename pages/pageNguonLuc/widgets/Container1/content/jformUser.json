@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 50,
+  "bottomRow": 57,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -215,7 +215,7 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onSubmit": "{{updateNguonLuc.run().then(() => {\n  getNguocLucs.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Cập nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 50,
+  "originalBottomRow": 57,
   "originalTopRow": 4,
   "parentColumnSpace": 19.1484375,
   "parentId": "np3b8vrgfd",
@@ -297,12 +297,12 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 6,
-          "sourceData": 3
+          "sourceData": 4
         },
         "id_loai_nguon_luc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",

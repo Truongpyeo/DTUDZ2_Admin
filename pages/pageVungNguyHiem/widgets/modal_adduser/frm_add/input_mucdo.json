@@ -46,7 +46,7 @@
   "parentColumnSpace": 8.21875,
   "parentId": "7k5okaozh8",
   "parentRowSpace": 10,
-  "regex": "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",
+  "regex": "",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",

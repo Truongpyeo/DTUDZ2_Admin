@@ -61,12 +61,12 @@
         },
         "insert": {
           "documents": {
-            "data": "{\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"ten_vung\": \"{{inp_tenvung.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"muc_do\": \"{{input_mucdo.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"is_active\": true,                                 \n\t\"toa_do\": {\n\t\"lat\" : \"15.115466\",\n\t\"lng\" : \"108.804808\"\n}\n}\n"
+            "data": "{\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"ten_vung\": \"{{inp_tenvung.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"muc_do\": \"{{input_mucdo.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"is_active\": true,                                 \n\t\"toa_do\": {\n\t\"lat\": \"{{this.params.toa_do_x}}\",\n\t\"lng\": \"{{this.params.toa_do_y}}\",    \n}\n}\n"
           }
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"insert\": \"vung_nguy_hiem\",\n  \"documents\": {\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"ten_vung\": \"{{inp_tenvung.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"muc_do\": \"{{input_mucdo.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"is_active\": true,                                 \n\t\"toa_do\": {\n\t\"lat\" : \"15.115466\",\n\t\"lng\" : \"108.804808\"\n}\n}\n\n}\n",
+            "data": "{\n  \"insert\": \"vung_nguy_hiem\",\n  \"documents\": {\n\t\"id\": \"{{this.params.id}}\",                         \n\t\"ten_vung\": \"{{inp_tenvung.text}}\",                     \n\t\"noi_dung\": \"{{input_mota.text}}\",                     \n\t\"muc_do\": \"{{input_mucdo.text}}\",                     \n\t\"id_vung_nguy_hiem\": \"{{Select_loai_nguy_hiem.selectedOptionValue}}\",                     \n\t\"is_active\": true,                                 \n\t\"toa_do\": {\n\t\"lat\": \"{{this.params.toa_do_x}}\",\n\t\"lng\": \"{{this.params.toa_do_y}}\",    \n}\n}\n\n}\n",
             "status": "SUCCESS"
           }
         },

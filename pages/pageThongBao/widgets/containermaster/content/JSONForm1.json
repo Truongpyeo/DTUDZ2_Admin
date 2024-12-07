@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 62,
+  "bottomRow": 78,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -171,18 +171,6 @@
       "key": "schema.__root_schema__.children.customField1.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.ten_nguoi_tao.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.ten_nguoi_tao.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.ten_nguoi_tao.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.is_open.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.defaultValue"
     },
     {
@@ -190,6 +178,15 @@
     },
     {
       "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_nguoi_tao.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_nguoi_tao.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ten_nguoi_tao.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -219,7 +216,7 @@
   "mobileTopRow": 5,
   "needsErrorInfo": false,
   "onSubmit": "{{updateThongBaos.run().then(() => {\n  getThongBaos.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});}}",
-  "originalBottomRow": 62,
+  "originalBottomRow": 71,
   "originalTopRow": 5,
   "parentColumnSpace": 18.8896484375,
   "parentId": "dymqkelahi",
@@ -280,12 +277,12 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
-          "position": 5,
-          "sourceData": 1
+          "position": 2,
+          "sourceData": 2
         },
         "id_nguoi_tao": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -302,28 +299,28 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Id Nguoi Tao",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id_nguoi_tao",
           "position": 3,
-          "sourceData": 12
+          "sourceData": 7
         },
         "is_open": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
           "accessor": "is_open",
-          "alignWidget": "RIGHT",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+          "alignWidget": "LEFT",
+          "boxShadow": "none",
           "children": {},
           "dataType": "boolean",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.is_open))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Checkbox",
+          "fieldType": "Switch",
           "identifier": "is_open",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Tình Trạng",
+          "label": "Is Open",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_open",
           "position": 6,
@@ -392,8 +389,8 @@
           "label": "Ten Nguoi Tao",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ten_nguoi_tao",
-          "position": 6,
-          "sourceData": "Việt võ"
+          "position": 7,
+          "sourceData": "admin2"
         },
         "tieu_de": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",

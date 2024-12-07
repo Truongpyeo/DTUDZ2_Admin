@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{appsmith.geolocation.getCurrentPosition(location => {\n  // add code here\n});\nappsmith.geolocation.watchPosition();}}",
+  "onClick": "{{appsmith.geolocation.watchPosition();\nJSObject1.actionCreateVungNguyHiem();}}",
   "originalBottomRow": 52,
   "originalTopRow": 48,
   "parentId": "k9ozh8kinq",
