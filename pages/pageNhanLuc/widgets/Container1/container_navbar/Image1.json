@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "defaultImage": "https://dzfullstack.com/assets/images/logo-1.png",
+  "defaultImage": "https://img.upanh.tv/2024/12/08/Thiet-ke-chua-co-ten.png",
   "displayName": "Image",
   "dynamicBindingPathList": [
     {
@@ -31,13 +31,13 @@
   "objectFit": "contain",
   "onClick": "{{navigateTo('MASTER_ADMIN', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 3.7119140625,
-  "parentId": "fb869t9eqy",
+  "parentId": "hditdyzj3f",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 62,
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "vw478sgcc8",
+  "widgetId": "q0wjsh7d5j",
   "widgetName": "Image1"
 }

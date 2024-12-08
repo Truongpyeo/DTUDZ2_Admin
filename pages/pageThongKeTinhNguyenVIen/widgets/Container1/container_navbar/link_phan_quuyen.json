@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pagePhanQuyen', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "actxsgazjc",
+  "parentId": "36r57u39d0",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 20,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rbbi52n5wo",
+  "widgetId": "meaanmr4kk",
   "widgetName": "link_phan_quuyen"
 }

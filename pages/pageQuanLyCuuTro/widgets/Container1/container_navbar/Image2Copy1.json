@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 58,
+  "bottomRow": 63,
   "boxShadow": "none",
   "defaultImage": "https://s3.us-east-2.amazonaws.com/template.appsmith.com/files.svg",
   "displayName": "Image",
@@ -25,13 +25,13 @@
   "maxZoomLevel": 1,
   "objectFit": "contain",
   "parentColumnSpace": 4.021484375,
-  "parentId": "0hvb3yewh9",
+  "parentId": "545xfz4mwh",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 13,
-  "topRow": 54,
+  "topRow": 59,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "t3lbo47tek",
+  "widgetId": "maodoh71qq",
   "widgetName": "Image2Copy1"
 }

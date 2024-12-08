@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pageThongBao', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "fb869t9eqy",
+  "parentId": "hditdyzj3f",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 40,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "98sug1s2f5",
+  "widgetId": "3apzf36ycs",
   "widgetName": "link_nhan_lucCopyCopy"
 }

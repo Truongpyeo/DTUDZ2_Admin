@@ -25,9 +25,9 @@
   "isVisible": true,
   "key": "ea7apjwric",
   "leftColumn": 1,
-  "onClick": "{{navigateTo('pageThongKe', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{navigateTo('pageThongKeTinhNguyenVIen', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "r36qgf1hcq",
+  "parentId": "8co6wbkpff",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 45,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "zyeuiomifa",
+  "widgetId": "h5ov8bojjq",
   "widgetName": "link_nhan_lucCopyCopyCopyCopy"
 }

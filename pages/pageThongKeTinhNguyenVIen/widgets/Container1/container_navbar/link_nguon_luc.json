@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pageNguonLuc', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "actxsgazjc",
+  "parentId": "36r57u39d0",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 25,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "y5fc113e3z",
+  "widgetId": "1b037eycjg",
   "widgetName": "link_nguon_luc"
 }

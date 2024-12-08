@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pageNhanLuc', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "n7vbkshutf",
+  "parentId": "mg3ze9zelw",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 30,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "5y7vz17g2a",
+  "widgetId": "z1y3qbxw5s",
   "widgetName": "link_nhan_luc"
 }

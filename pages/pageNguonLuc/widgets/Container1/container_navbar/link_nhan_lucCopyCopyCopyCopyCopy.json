@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pageVungNguyHiem', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "6qxqlyewjm",
+  "parentId": "orhp4h1nse",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 50,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "y424p5l4lt",
+  "widgetId": "ijde6f5a6z",
   "widgetName": "link_nhan_lucCopyCopyCopyCopyCopy"
 }

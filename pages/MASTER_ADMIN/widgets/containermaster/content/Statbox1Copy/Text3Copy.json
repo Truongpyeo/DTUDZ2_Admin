@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10,
+  "bottomRow": 15,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -30,8 +30,8 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 10,
-  "originalTopRow": 5,
+  "originalBottomRow": 15,
+  "originalTopRow": 7,
   "overflow": "NONE",
   "parentId": "ut1j1s5sa9",
   "renderMode": "CANVAS",
@@ -41,7 +41,7 @@
   "text": "Tổng người cần hỗ trợ",
   "textAlign": "LEFT",
   "textColor": "#3f3f46",
-  "topRow": 5,
+  "topRow": 7,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

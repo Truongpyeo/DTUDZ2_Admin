@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pageYeuCauCuuTro', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "0hvb3yewh9",
+  "parentId": "545xfz4mwh",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -38,10 +38,10 @@
     "click",
     "submit"
   ],
-  "text": " Điều Phối Cứu Trợ",
+  "text": "Yêu Cầu Và Điều Phối",
   "topRow": 35,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "0cg0jtrum2",
+  "widgetId": "9t33xfnjvm",
   "widgetName": "link_nhan_lucCopy"
 }

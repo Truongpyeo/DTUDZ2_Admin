@@ -27,7 +27,7 @@
   "leftColumn": 1,
   "onClick": "{{navigateTo('pageYeuCauCuuTro', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "6uqg27aouh",
+  "parentId": "1evopvhdta",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
@@ -42,6 +42,6 @@
   "topRow": 35,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "1d81gb327g",
+  "widgetId": "25mw2bx4wx",
   "widgetName": "link_nhan_lucCopy"
 }

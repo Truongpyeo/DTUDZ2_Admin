@@ -84,7 +84,7 @@
       "isDisabled": false,
       "isVisible": "{{appsmith.store.id_admin === undefined? false : true}}",
       "label": "Đăng xuất",
-      "onClick": "{{storeValue('id_admin', null); navigateTo('pageDangNhap')}}",
+      "onClick": "{{clearStore(); navigateTo('pageDangNhap')}}",
       "widgetId": ""
     }
   },
