@@ -216,7 +216,7 @@
   "mobileTopRow": 5,
   "needsErrorInfo": false,
   "onSubmit": "{{updateThongBaos.run().then(() => {\n  getThongBaos.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});}}",
-  "originalBottomRow": 71,
+  "originalBottomRow": 78,
   "originalTopRow": 5,
   "parentColumnSpace": 18.8896484375,
   "parentId": "dymqkelahi",
