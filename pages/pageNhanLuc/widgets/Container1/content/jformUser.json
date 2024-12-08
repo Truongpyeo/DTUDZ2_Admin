@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 55,
+  "bottomRow": 48,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -135,15 +135,6 @@
       "key": "schema.__root_schema__.children.id_nguon_luc.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.ten_nhan_luc.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.ten_nhan_luc.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.ten_nhan_luc.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.ten_nha_tai_tro.accentColor"
     },
     {
@@ -225,7 +216,7 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onSubmit": "{{updateNhanLucs.run().then(() => {\n  getNhanLucs.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('cập nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 55,
+  "originalBottomRow": 48,
   "originalTopRow": 4,
   "parentColumnSpace": 19.1484375,
   "parentId": "7q0i5n0p2w",
@@ -422,28 +413,6 @@
           "position": 2,
           "serverSideFiltering": false,
           "sourceData": "Tổ chức A"
-        },
-        "ten_nhan_luc": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
-          "accessor": "ten_nhan_luc",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ten_nhan_luc))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "ten_nhan_luc",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Tên nhân lực",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "ten_nhan_luc",
-          "position": 1,
-          "sourceData": "Nhóm cứu trợ 1"
         }
       },
       "dataType": "object",

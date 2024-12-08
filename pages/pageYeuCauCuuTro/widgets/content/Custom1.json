@@ -5,7 +5,7 @@
   "borderWidth": "1",
   "bottomRow": 64,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultModel": "{{\n\n{\"map\" : {\n\t'lat' : table.selectedRow.toa_do_x,\n\t'lng' : table.selectedRow.toa_do_y,\n\t'title':table.selectedRow.ho_va_ten, \"location\": table.selectedRow.dia_chi\n}}\n}}",
+  "defaultModel": "{{\n\n{\"map\" : {\n\t'lat' : table.selectedRow.toa_do_x,\n\t'lng' : table.selectedRow.toa_do_y,\n\t'title':table.selectedRow.ho_va_ten || table.selectedRow.ten_sos, \"location\": table.selectedRow.dia_chi || table.selectedRow.dia_chi_sos\n}}\n}}",
   "dynamicBindingPathList": [
     {
       "key": "theme"

@@ -135,15 +135,6 @@
       "key": "schema.__root_schema__.children.is_active.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.updated_at.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.updated_at.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.loai_nguy_hiem.defaultValue"
     },
     {
@@ -506,28 +497,6 @@
             "lat": 15.115466,
             "lng": 108.804808
           }
-        },
-        "updated_at": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "accessor": "updated_at",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.updated_at))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "updated_at",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": false,
-          "label": "Updated At",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "updated_at",
-          "position": 9,
-          "sourceData": "2024-12-05T00:00:00Z"
         }
       },
       "dataType": "object",

@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 78,
+  "bottomRow": 71,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -216,7 +216,7 @@
   "mobileTopRow": 5,
   "needsErrorInfo": false,
   "onSubmit": "{{updateThongBaos.run().then(() => {\n  getThongBaos.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Lỗi', 'error');\n});}}",
-  "originalBottomRow": 78,
+  "originalBottomRow": 71,
   "originalTopRow": 5,
   "parentColumnSpace": 18.8896484375,
   "parentId": "dymqkelahi",
@@ -363,7 +363,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Ten Loai Nguy Hiem",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ten_loai_nguy_hiem",

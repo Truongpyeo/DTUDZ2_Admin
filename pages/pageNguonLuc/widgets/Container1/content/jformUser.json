@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 57,
+  "bottomRow": 64,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -180,9 +180,6 @@
       "key": "schema.__root_schema__.children.loai_nguon_luc.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.id_loai_nguon_luc.options"
-    },
-    {
       "key": "schema.__root_schema__.children.STT.defaultValue"
     },
     {
@@ -215,7 +212,7 @@
   "mobileTopRow": 4,
   "needsErrorInfo": false,
   "onSubmit": "{{updateNguonLuc.run().then(() => {\n  getNguocLucs.run();\n  showAlert('Cập nhật thành công', 'success');\n}).catch(() => {\n  showAlert('Cập nhật thất bại', 'error');\n});}}",
-  "originalBottomRow": 57,
+  "originalBottomRow": 64,
   "originalTopRow": 4,
   "parentColumnSpace": 19.1484375,
   "parentId": "np3b8vrgfd",
@@ -253,12 +250,12 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "STT",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "STT",
           "position": 7,
-          "sourceData": 0
+          "sourceData": 2
         },
         "email": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
@@ -302,7 +299,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
           "position": 6,
-          "sourceData": 4
+          "sourceData": 2
         },
         "id_loai_nguon_luc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
@@ -312,20 +309,19 @@
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id_loai_nguon_luc))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
-          "fieldType": "Select",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
           "identifier": "id_loai_nguon_luc",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Loại nguồn lực",
+          "label": "Id Loai Nguon Luc",
           "labelTextSize": "0.875rem",
-          "options": "{{ getLoaiNguonLucs.data.map(item => ({\n\tlabel: item.ten_loai_nguon_luc,              \n\tvalue: item.id      \n}))}}",
           "originalIdentifier": "id_loai_nguon_luc",
           "position": 3,
-          "serverSideFiltering": false,
-          "sourceData": 3
+          "sourceData": 2
         },
         "loai_icon": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(jformUser.sourceData, jformUser.formData, jformUser.fieldState)}}",
