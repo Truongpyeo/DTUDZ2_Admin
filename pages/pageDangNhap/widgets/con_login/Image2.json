@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 60,
+  "bottomRow": 69,
   "boxShadow": "none",
   "defaultImage": "https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/469503646_1545930719392322_5217204677059592535_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFZFUv20BD02dwLG2WzBZtMDuw1fDSdpHoO7DV8NJ2keryQyLLXzg6FNdX-EGHumXP-XcvwyShkJqxcdxYWsJM9&_nc_ohc=qbMj_b1AL1kQ7kNvgEwnNvF&_nc_zt=23&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=Ava3iRvCbkZDXfdxbjWs2p4&oh=00_AYDf_jKuiOe5FJPSlMjbgiELr6fLodk4dyyoZSoGhcnIpA&oe=6759B642",
   "dynamicBindingPathList": [
@@ -25,7 +25,7 @@
   "mobileRightColumn": 12,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "objectFit": "cover",
+  "objectFit": "auto",
   "parentColumnSpace": 17.625,
   "parentId": "jm5o3xgga5",
   "parentRowSpace": 10,
