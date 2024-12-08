@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"update\": \"nhan_cuu_tros\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table_huydieuphoi.triggeredRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {\n\t\t\"trang_thai\": \"Đã Huỷ\"\n\t}\n}\n,\n    \"multi\": false,\n  }]\n}\n",
+            "data": "{\n  \"update\": \"nhan_cuu_tros\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table_huydieuphoi.triggeredRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {\n\t\t\"trang_thai\": \"Đã huỷ\"\n\t}\n}\n,\n    \"multi\": false,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -81,7 +81,7 @@
             "data": "{\n  \"id\": {{table_huydieuphoi.triggeredRow.id}}\n}\n"
           },
           "update": {
-            "data": "{\n\t\"$set\": {\n\t\t\"trang_thai\": \"Đã Huỷ\"\n\t}\n}\n"
+            "data": "{\n\t\"$set\": {\n\t\t\"trang_thai\": \"Đã huỷ\"\n\t}\n}\n"
           }
         }
       },

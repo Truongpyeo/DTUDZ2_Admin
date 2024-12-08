@@ -959,7 +959,7 @@
       "notation": "standard",
       "originalId": "trang_thai",
       "sticky": "",
-      "textColor": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trang_thai\"] === \"Đã Huỷ\"? \"#ef4444\":\"#15803d\"))}}",
+      "textColor": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trang_thai\"] === \"Đã huỷ\"? \"#ef4444\":\"#15803d\"))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
