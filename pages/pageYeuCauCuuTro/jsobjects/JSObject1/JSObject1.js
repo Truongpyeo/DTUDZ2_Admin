@@ -31,8 +31,12 @@ export default {
 		}
 	},
 	createNhanCuuTro:async ()=>{
+		const createdAt = new Date();
 		const uuid = UUID.genV4();
-		await themMoi.run({id:uuid.hexNoDelim});
+		await themMoi.run({
+			id:uuid.hexNoDelim,
+			created_at: createdAt.toISOString(),
+		});
 		await changeTrangThaiCuuNans.run();
 		await changeNhanLucs.run();
 		await getYeuCauCuuTro.run();

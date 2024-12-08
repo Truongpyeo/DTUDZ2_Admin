@@ -9,7 +9,7 @@
       "formData": {
         "aggregate": {
           "arrayPipelines": {
-            "data": "[ { \"$match\": { \"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\" } }, { \"$lookup\": { \"from\": \"nhan_lucs\", \"localField\": \"id_nhan_luc\", \"foreignField\": \"id\", \"as\": \"nhan_luc_details\" } }, { \"$unwind\": { \"path\": \"$nhan_luc_details\", \"preserveNullAndEmptyArrays\": true } }, {\n\t\t\t\t\t\t\t \"$match\": {\n\t\t\t\t\t\t\t \"nhan_luc_details.is_san_san\": false\n\t\t\t\t\t\t\t}\n\t}, { \"$project\": { \"_id\": 0, \"id\": 1, \"id_thong_tin_cuu_tro\": 1, \"id_nhan_luc\": 1, \"trang_thai\": 1, \"so_nguoi\": 1, \"ten_nhan_luc\": \"$nhan_luc_details.ten_nhan_luc\",\"is_san_san\": \"$nhan_luc_details.is_san_san\" } } ]"
+            "data": "[ { \"$match\": { \"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\" \"trang_thai\":\"Đã Tiếp Nhận\" } }, { \"$lookup\": { \"from\": \"nhan_lucs\", \"localField\": \"id_nhan_luc\", \"foreignField\": \"id\", \"as\": \"nhan_luc_details\" } }, { \"$unwind\": { \"path\": \"$nhan_luc_details\", \"preserveNullAndEmptyArrays\": true } }, {\n\t\t\t\t\t\t\t \"$match\": {\n\t\t\t\t\t\t\t \"nhan_luc_details.is_san_san\": false\n\t\t\t\t\t\t\t}\n\t}, { \"$project\": { \"_id\": 0, \"id\": 1, \"id_thong_tin_cuu_tro\": 1, \"id_nhan_luc\": 1, \"trang_thai\": 1, \"so_nguoi\": 1, \"ten_nhan_luc\": \"$nhan_luc_details.ten_nhan_luc\",\"is_san_san\": \"$nhan_luc_details.is_san_san\" } } ]"
           },
           "limit": {
             "data": ""
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"aggregate\": \"nhan_cuu_tros\",\n  \"pipeline\": [ { \"$match\": { \"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\" } }, { \"$lookup\": { \"from\": \"nhan_lucs\", \"localField\": \"id_nhan_luc\", \"foreignField\": \"id\", \"as\": \"nhan_luc_details\" } }, { \"$unwind\": { \"path\": \"$nhan_luc_details\", \"preserveNullAndEmptyArrays\": true } }, {\n\t\t\t\t\t\t\t \"$match\": {\n\t\t\t\t\t\t\t \"nhan_luc_details.is_san_san\": false\n\t\t\t\t\t\t\t}\n\t}, { \"$project\": { \"_id\": 0, \"id\": 1, \"id_thong_tin_cuu_tro\": 1, \"id_nhan_luc\": 1, \"trang_thai\": 1, \"so_nguoi\": 1, \"ten_nhan_luc\": \"$nhan_luc_details.ten_nhan_luc\",\"is_san_san\": \"$nhan_luc_details.is_san_san\" } } ],\n  \"cursor\": {}\n}\n",
+            "data": "{\n  \"aggregate\": \"nhan_cuu_tros\",\n  \"pipeline\": [ { \"$match\": { \"id_thong_tin_cuu_tro\": \"{{table.triggeredRow.id}}\" \"trang_thai\":\"Đã Tiếp Nhận\" } }, { \"$lookup\": { \"from\": \"nhan_lucs\", \"localField\": \"id_nhan_luc\", \"foreignField\": \"id\", \"as\": \"nhan_luc_details\" } }, { \"$unwind\": { \"path\": \"$nhan_luc_details\", \"preserveNullAndEmptyArrays\": true } }, {\n\t\t\t\t\t\t\t \"$match\": {\n\t\t\t\t\t\t\t \"nhan_luc_details.is_san_san\": false\n\t\t\t\t\t\t\t}\n\t}, { \"$project\": { \"_id\": 0, \"id\": 1, \"id_thong_tin_cuu_tro\": 1, \"id_nhan_luc\": 1, \"trang_thai\": 1, \"so_nguoi\": 1, \"ten_nhan_luc\": \"$nhan_luc_details.ten_nhan_luc\",\"is_san_san\": \"$nhan_luc_details.is_san_san\" } } ],\n  \"cursor\": {}\n}\n",
             "status": "SUCCESS"
           }
         },
