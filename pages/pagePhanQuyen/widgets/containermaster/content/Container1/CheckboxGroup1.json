@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 20,
   "defaultSelectedValues": "",
   "dynamicBindingPathList": [
     {
@@ -43,7 +43,7 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "options": "{{ getChucNangs.data.map(item => ({\n   label: item.ten_chuc_nang,\n   value: item._id\n})); }}\n",
-  "originalBottomRow": 20,
+  "originalBottomRow": 35,
   "originalTopRow": 1,
   "parentColumnSpace": 6.897055745124817,
   "parentId": "8q9jza2ofa",

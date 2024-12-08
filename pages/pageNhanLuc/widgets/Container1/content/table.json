@@ -41,9 +41,10 @@
     "customColumn2",
     "customColumn1",
     "id_nguon_luc",
+    "ten_nhan_luc",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1733628545420,
+  "columnUpdatedAt": 1733630428309,
   "columnWidthMap": {
     "customColumn1": 62,
     "customColumn3": 71.00000000000001,
@@ -123,6 +124,9 @@
     },
     {
       "key": "primaryColumns.customColumn3.computedValue"
+    },
+    {
+      "key": "primaryColumns.ten_nhan_luc.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -556,6 +560,40 @@
       "label": "Tên tổ chức",
       "notation": "standard",
       "originalId": "ten_nha_tai_tro",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "ten_nhan_luc": {
+      "alias": "ten_nhan_luc",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ten_nhan_luc\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "ten_nhan_luc",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ten_nhan_luc",
+      "notation": "standard",
+      "originalId": "ten_nhan_luc",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

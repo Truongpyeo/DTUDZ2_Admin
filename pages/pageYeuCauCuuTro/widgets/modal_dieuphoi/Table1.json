@@ -32,18 +32,18 @@
   },
   "columnOrder": [
     "customColumn1",
+    "ten_nhan_luc",
+    "customColumn3",
+    "customColumn2",
+    "so_dien_thoai",
     "id_nguon_luc",
     "password",
-    "customColumn3",
     "email",
     "is_san_san",
     "_id",
-    "id",
-    "customColumn2",
-    "so_dien_thoai",
-    "ten_phan_luc"
+    "id"
   ],
-  "columnUpdatedAt": 1733628698817,
+  "columnUpdatedAt": 1733630606048,
   "columnWidthMap": {
     "customColumn1": 97,
     "customColumn2": 126.125,
@@ -114,7 +114,7 @@
       "key": "primaryColumns.customColumn2.isDisabled"
     },
     {
-      "key": "primaryColumns.ten_phan_luc.computedValue"
+      "key": "primaryColumns.ten_nhan_luc.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -491,21 +491,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "ten_phan_luc": {
-      "alias": "ten_phan_luc",
+    "ten_nhan_luc": {
+      "alias": "ten_nhan_luc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ten_phan_luc\"]))}}",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ten_nhan_luc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "ten_phan_luc",
-      "index": 6,
+      "id": "ten_nhan_luc",
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -514,9 +514,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "ten_phan_luc",
+      "label": "Tên nhân lực",
       "notation": "standard",
-      "originalId": "ten_phan_luc",
+      "originalId": "ten_nhan_luc",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
