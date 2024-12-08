@@ -42,7 +42,7 @@
   "rightColumn": 58,
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "bạn có chắc muốn xoá {{table.triggeredRow.ten_nhan_luc}} ?",
+  "text": "bạn có chắc muốn xoá {{table.triggeredRow.ten_nhan_luc || table.selectedRow.ten_sos}} ?",
   "textAlign": "CENTER",
   "textColor": "#ef4444",
   "topRow": 7,
