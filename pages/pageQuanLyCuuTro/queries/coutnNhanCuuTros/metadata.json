@@ -96,7 +96,7 @@
       "pluginId": "mongo-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "coutnNhanCuuTros",
     "pageId": "pageQuanLyCuuTro",
     "userSetOnLoad": false

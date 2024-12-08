@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "5",
-  "bottomRow": 57,
+  "bottomRow": 55,
   "boxShadow": "none",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -32,29 +32,29 @@
   },
   "columnOrder": [
     "customColumn2",
-    "ho_va_ten_nguoi_dung",
-    "noi_dung",
-    "is_tro_cap",
-    "trang_thai",
-    "customColumn1",
-    "is_sos",
-    "toa_do_y",
-    "toa_do_x",
-    "id",
-    "id_thong_tin_cuu_tro",
+    "ho_va_ten_sos",
     "so_dien_thoai_nguoi_dung",
+    "noi_dung",
+    "dia_chi_nguoi_dung",
+    "customColumn1",
+    "id_thong_tin_cuu_tro",
+    "ho_va_ten_nhan_luc",
+    "trang_thai",
+    "so_dien_thoai_nhan_luc",
     "so_nguoi",
     "id_nhan_luc",
-    "ho_va_ten_nhan_luc",
-    "so_dien_thoai_nhan_luc",
-    "email_nguoi_dung",
-    "dia_chi_nguoi_dung",
-    "email_nhan_luc",
-    "ho_va_ten_sos",
+    "is_sos",
     "so_dien_thoai_sos",
-    "dia_chi_sos"
+    "email_nguoi_dung",
+    "dia_chi_sos",
+    "toa_do_y",
+    "toa_do_x",
+    "email_nhan_luc",
+    "id",
+    "is_tro_cap",
+    "ho_va_ten_nguoi_dung"
   ],
-  "columnUpdatedAt": 1733461180091,
+  "columnUpdatedAt": 1733619890812,
   "columnWidthMap": {
     "customColumn1": 115,
     "customColumn2": 76,
@@ -62,11 +62,13 @@
     "email_nguoi_dung": 193,
     "gender": 110,
     "ho_va_ten_nguoi_dung": 194,
+    "ho_va_ten_sos": 137,
     "is_san_san": 118,
     "is_sos": 118,
     "is_tro_cap": 134,
     "noi_dung": 246,
-    "so_dien_thoai_nguoi_dung": 173
+    "so_dien_thoai_nguoi_dung": 173,
+    "so_dien_thoai_nhan_luc": 176
   },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
@@ -86,22 +88,16 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.toa_do_y.computedValue"
+      "key": "primaryColumns.customColumn1.computedValue"
     },
     {
-      "key": "primaryColumns.toa_do_x.computedValue"
+      "key": "primaryColumns.customColumn1.textColor"
     },
     {
-      "key": "primaryColumns.noi_dung.computedValue"
+      "key": "primaryColumns.customColumn2.computedValue"
     },
     {
-      "key": "primaryColumns.is_sos.computedValue"
-    },
-    {
-      "key": "primaryColumns.is_tro_cap.computedValue"
-    },
-    {
-      "key": "primaryColumns.id.computedValue"
+      "key": "totalRecordsCount"
     },
     {
       "key": "primaryColumns.so_dien_thoai_nhan_luc.computedValue"
@@ -116,10 +112,22 @@
       "key": "primaryColumns.so_nguoi.computedValue"
     },
     {
+      "key": "primaryColumns.ho_va_ten_sos.computedValue"
+    },
+    {
+      "key": "primaryColumns.noi_dung.computedValue"
+    },
+    {
       "key": "primaryColumns.id_nhan_luc.computedValue"
     },
     {
       "key": "primaryColumns.trang_thai.computedValue"
+    },
+    {
+      "key": "primaryColumns.is_sos.computedValue"
+    },
+    {
+      "key": "primaryColumns.so_dien_thoai_sos.computedValue"
     },
     {
       "key": "primaryColumns.email_nguoi_dung.computedValue"
@@ -131,28 +139,28 @@
       "key": "primaryColumns.ho_va_ten_nhan_luc.computedValue"
     },
     {
+      "key": "primaryColumns.dia_chi_sos.computedValue"
+    },
+    {
+      "key": "primaryColumns.toa_do_y.computedValue"
+    },
+    {
+      "key": "primaryColumns.toa_do_x.computedValue"
+    },
+    {
       "key": "primaryColumns.email_nhan_luc.computedValue"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.is_tro_cap.computedValue"
     },
     {
       "key": "primaryColumns.ho_va_ten_nguoi_dung.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.textColor"
-    },
-    {
-      "key": "primaryColumns.customColumn2.computedValue"
-    },
-    {
-      "key": "primaryColumns.ho_va_ten_sos.computedValue"
-    },
-    {
-      "key": "primaryColumns.so_dien_thoai_sos.computedValue"
-    },
-    {
-      "key": "primaryColumns.dia_chi_sos.computedValue"
+      "key": "primaryColumns.trang_thai.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -161,6 +169,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.textColor"
+    },
+    {
+      "key": "primaryColumns.trang_thai.textColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -289,7 +300,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "dia_chi_nguoi_dung",
-      "index": 9,
+      "index": 11,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -298,7 +309,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Địa chỉ người yêu cầu",
+      "label": "Địa chỉ ",
       "notation": "standard",
       "originalId": "dia_chi_nguoi_dung",
       "sticky": "",
@@ -357,7 +368,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "email_nguoi_dung",
-      "index": 8,
+      "index": 10,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -365,8 +376,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Email người yêu cầu",
+      "isVisible": false,
+      "label": "Email người dùng",
       "notation": "standard",
       "originalId": "email_nguoi_dung",
       "sticky": "",
@@ -391,7 +402,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "email_nhan_luc",
-      "index": 13,
+      "index": 16,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -399,8 +410,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
-      "label": "email_nhan_luc",
+      "isVisible": false,
+      "label": "Email nhân lực",
       "notation": "standard",
       "originalId": "email_nhan_luc",
       "sticky": "",
@@ -417,15 +428,15 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ho_va_ten_nguoi_dung\"] || currentRow[\"ho_va_ten_sos\"]))}}",
+      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ho_va_ten_nguoi_dung\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "ho_va_ten_nguoi_dung",
-      "index": 16,
+      "index": 19,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -433,8 +444,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Tên người yêu cầu",
+      "isVisible": false,
+      "label": "ho_va_ten_nguoi_dung",
       "notation": "standard",
       "originalId": "ho_va_ten_nguoi_dung",
       "sticky": "",
@@ -459,7 +470,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "ho_va_ten_nhan_luc",
-      "index": 10,
+      "index": 12,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -468,7 +479,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Nhóm nhân lực",
+      "label": "Tên nhân lực",
       "notation": "standard",
       "originalId": "ho_va_ten_nhan_luc",
       "sticky": "",
@@ -485,7 +496,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ho_va_ten_sos\"]))}}",
+      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ho_va_ten_sos\"]|| currentRow[\"ho_va_ten_nguoi_dung\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -501,8 +512,8 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "ho_va_ten_sos",
+      "isVisible": true,
+      "label": "Tên người gửi",
       "notation": "standard",
       "originalId": "ho_va_ten_sos",
       "sticky": "",
@@ -518,7 +529,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
+      "columnType": "text",
       "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -527,7 +538,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "id",
-      "index": 4,
+      "index": 17,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -561,7 +572,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "id_nhan_luc",
-      "index": 5,
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -586,7 +597,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "number",
+      "columnType": "text",
       "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_thong_tin_cuu_tro\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -629,7 +640,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "is_sos",
-      "index": 4,
+      "index": 8,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -638,7 +649,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "Khẩn cấp",
+      "label": "is_sos",
       "notation": "standard",
       "originalId": "is_sos",
       "sticky": "",
@@ -663,7 +674,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "is_tro_cap",
-      "index": 6,
+      "index": 18,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -672,7 +683,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": false,
-      "label": "Cần trợ cấp",
+      "label": "is_tro_cap",
       "notation": "standard",
       "originalId": "is_tro_cap",
       "sticky": "",
@@ -695,9 +706,9 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "noi_dung",
-      "index": 2,
+      "index": 5,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -706,7 +717,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Nội dung",
+      "label": "Nội dung yêu cầu",
       "notation": "standard",
       "originalId": "noi_dung",
       "sticky": "",
@@ -740,7 +751,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "SDT người yêu cầu",
+      "label": "SDT người gửi",
       "notation": "standard",
       "originalId": "so_dien_thoai_nguoi_dung",
       "sticky": "",
@@ -867,7 +878,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "toa_do_x",
-      "index": 1,
+      "index": 15,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -901,7 +912,7 @@
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "toa_do_y",
-      "index": 0,
+      "index": 14,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -925,7 +936,7 @@
       "alias": "trang_thai",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
+      "cellBackground": "",
       "columnType": "text",
       "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trang_thai\"]))}}",
       "currencyCode": "USD",
@@ -935,7 +946,7 @@
       "fontStyle": "BOLD",
       "horizontalAlignment": "CENTER",
       "id": "trang_thai",
-      "index": 6,
+      "index": 7,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -948,7 +959,7 @@
       "notation": "standard",
       "originalId": "trang_thai",
       "sticky": "",
-      "textColor": "#15803d",
+      "textColor": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trang_thai\"] === \"Đã Huỷ\"? \"#ef4444\":\"#15803d\"))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -969,7 +980,7 @@
   ],
   "textSize": "0.875rem",
   "topRow": 4,
-  "totalRecordsCount": "",
+  "totalRecordsCount": "{{coutnNhanCuuTros.data.n}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
