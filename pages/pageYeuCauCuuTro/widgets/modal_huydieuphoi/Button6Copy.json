@@ -33,6 +33,8 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(modal_huydieuphoi.name);}}",
+  "originalBottomRow": 45,
+  "originalTopRow": 41,
   "parentId": "hghn2znero",
   "placement": "CENTER",
   "recaptchaType": "V3",

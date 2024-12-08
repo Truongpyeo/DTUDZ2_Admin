@@ -1,4 +1,18 @@
 export default {
+	load () {
+		const socket = new AppsmithSocket().connect()
+		socket.on("sos_response", (data) => {
+			showAlert(data.data.message, "warning")
+		})
+	}, 
+	sendSOS  () {
+		const socket = new AppsmithSocket().connect();
+		var payload = {
+			message     :  "ĐÃ XÁC YÊU CẦU CỦA BẠN VÀ ĐANG TRÊN ĐƯỜNG ĐẾN",
+			check_sos			: table.triggeredRow.id
+		};
+		socket.emit("send_location", payload);
+	},
 	checklogin:  async () => {
 		const check = appsmith.store.id_admin;
 		if(check === undefined){
@@ -41,6 +55,7 @@ export default {
 		await changeNhanLucs.run();
 		await getYeuCauCuuTro.run();
 		await getNhanLucByNguonLuc.run();
+		this.sendSOS();
 		showAlert("Điều phối thành công!", "success");
 		closeModal(Modal1.name);
 	}

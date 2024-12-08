@@ -129,6 +129,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{getHuycutro.run()}}",
+  "originalBottomRow": 36,
+  "originalTopRow": 8,
   "parentColumnSpace": 9.9375,
   "parentId": "hghn2znero",
   "parentRowSpace": 10,
