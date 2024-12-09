@@ -32,6 +32,7 @@
   },
   "columnOrder": [
     "customColumn3",
+    "ten_nhan_luc",
     "ten_loai_nguon_luc",
     "ten_nha_tai_tro",
     "id",
@@ -41,10 +42,9 @@
     "customColumn2",
     "customColumn1",
     "id_nguon_luc",
-    "ten_nhan_luc",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1733630428309,
+  "columnUpdatedAt": 1733720405614,
   "columnWidthMap": {
     "customColumn1": 62,
     "customColumn3": 71.00000000000001,
@@ -591,7 +591,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "ten_nhan_luc",
+      "label": "Tên nhân lực",
       "notation": "standard",
       "originalId": "ten_nhan_luc",
       "sticky": "",
