@@ -218,6 +218,7 @@
       "label": "created_at",
       "notation": "standard",
       "originalId": "created_at",
+      "outputFormat": "H:mm A D MMMM, YYYY",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

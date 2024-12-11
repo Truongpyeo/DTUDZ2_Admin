@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 71,
+  "bottomRow": 51,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -171,15 +171,6 @@
       "key": "schema.__root_schema__.children.customField1.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.ten_loai_nguy_hiem.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.ten_nguoi_tao.defaultValue"
     },
     {
@@ -277,7 +268,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id",
@@ -299,7 +290,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id Nguoi Tao",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id_nguoi_tao",
@@ -319,7 +310,7 @@
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Is Open",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_open",
@@ -347,28 +338,6 @@
           "originalIdentifier": "noi_dung",
           "position": 1,
           "sourceData": "Một cơn bão lớn đang đến"
-        },
-        "ten_loai_nguy_hiem": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "accessor": "ten_loai_nguy_hiem",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ten_loai_nguy_hiem))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "ten_loai_nguy_hiem",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": false,
-          "label": "Ten Loai Nguy Hiem",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "ten_loai_nguy_hiem",
-          "position": 7,
-          "sourceData": "Bão"
         },
         "ten_nguoi_tao": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",

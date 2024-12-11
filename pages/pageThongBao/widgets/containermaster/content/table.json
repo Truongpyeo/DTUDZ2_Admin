@@ -35,13 +35,12 @@
     "noi_dung",
     "id_nguoi_tao",
     "ten_nguoi_tao",
-    "ten_loai_nguy_hiem",
     "is_open",
     "customColumn1",
     "id",
     "id_vung_nguy_hiem"
   ],
-  "columnUpdatedAt": 1733486522863,
+  "columnUpdatedAt": 1733924689868,
   "columnWidthMap": {
     "customColumn1": 95,
     "email": 208,
@@ -96,9 +95,6 @@
     },
     {
       "key": "primaryColumns.id_vung_nguy_hiem.computedValue"
-    },
-    {
-      "key": "primaryColumns.ten_loai_nguy_hiem.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -343,40 +339,6 @@
       "label": "Nội dung",
       "notation": "standard",
       "originalId": "noi_dung",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "ten_loai_nguy_hiem": {
-      "alias": "ten_loai_nguy_hiem",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ten_loai_nguy_hiem\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "ten_loai_nguy_hiem",
-      "index": 7,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Tên loại nguy hiểm",
-      "notation": "standard",
-      "originalId": "ten_loai_nguy_hiem",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

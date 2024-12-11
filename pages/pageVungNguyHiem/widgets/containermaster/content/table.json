@@ -40,11 +40,9 @@
     "_id",
     "toa_do",
     "customColumn1",
-    "noi_dung",
-    "mo_ta",
-    "id_vung_nguy_hiem"
+    "mo_ta"
   ],
-  "columnUpdatedAt": 1733922870408,
+  "columnUpdatedAt": 1733924708418,
   "columnWidthMap": {
     "customColumn1": 95,
     "email": 208,
@@ -103,13 +101,7 @@
       "key": "primaryColumns.toa_do.computedValue"
     },
     {
-      "key": "primaryColumns.noi_dung.computedValue"
-    },
-    {
       "key": "primaryColumns.mo_ta.computedValue"
-    },
-    {
-      "key": "primaryColumns.id_vung_nguy_hiem.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -291,40 +283,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "id_vung_nguy_hiem": {
-      "alias": "id_vung_nguy_hiem",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_vung_nguy_hiem\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "id_vung_nguy_hiem",
-      "index": 9,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "id_vung_nguy_hiem",
-      "notation": "standard",
-      "originalId": "id_vung_nguy_hiem",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "is_active": {
       "alias": "is_active",
       "allowCellWrapping": false,
@@ -446,40 +404,6 @@
       "notation": "standard",
       "originalId": "muc_do",
       "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "noi_dung": {
-      "alias": "noi_dung",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"noi_dung\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "noi_dung",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "noi_dung",
-      "notation": "standard",
-      "originalId": "noi_dung",
-      "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
