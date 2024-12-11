@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"update\": \"vung_nguy_hiem\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table.selectedRow.id}}\n}\n,\n    \"u\": {\n\t\"$set\": {{JSONForm1.formData}}\n},\n    \"multi\": false,\n  }]\n}\n",
+            "data": "{\n  \"update\": \"vung_nguy_hiem\",\n  \"updates\": [{\n    \"q\": {\n  \"id\": {{table.selectedRow.id}}\n}\n,\n    \"u\": // {\n\t// \"$set\": {{JSONForm1.formData}}\n// },\n    \"multi\": false,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -81,7 +81,7 @@
             "data": "{\n  \"id\": {{table.selectedRow.id}}\n}\n"
           },
           "update": {
-            "data": "{\n\t\"$set\": {{JSONForm1.formData}}\n}"
+            "data": "// {\n\t// \"$set\": {{JSONForm1.formData}}\n// }"
           }
         }
       },

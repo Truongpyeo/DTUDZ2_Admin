@@ -17,6 +17,7 @@ export default {
 	actionCreateVungNguyHiem: async () => {
 		try {
 			// Lấy vị trí hiện tại
+			const createdAt = new Date();
 			const location = appsmith.store.address || this.getCurrentLoction();
 			if (!inp_tenvung.text || !input_mota.text || !input_mucdo.text) {
 				showAlert("Không được để trống.", "error");
@@ -27,6 +28,8 @@ export default {
 				id: uuid.hexNoDelim,
 				toa_do_x: location.lat,
 				toa_do_y: location.lng,
+				created_at: createdAt.toISOString()
+
 			};
 			// Lưu vùng nguy hiểm và tải lại danh sách
 			await Insert_vung_nguy_hiem1.run(obj);

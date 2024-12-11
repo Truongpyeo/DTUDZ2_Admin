@@ -44,7 +44,7 @@
         },
         "find": {
           "limit": {
-            "data": ""
+            "data": "20"
           },
           "projection": {
             "data": ""
@@ -66,7 +66,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"find\": \"vung_nguy_hiem\",\n  \"filter\": {\n\t\"is_active\": true\n},\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
+            "data": "{\n  \"find\": \"vung_nguy_hiem\",\n  \"filter\": {\n\t\"is_active\": true\n},\n  \"limit\": 20,\n  \"batchSize\": 20\n}\n",
             "status": "SUCCESS"
           }
         },
